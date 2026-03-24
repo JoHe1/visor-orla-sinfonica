@@ -583,3 +583,80 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
     background-position: center;
     background-size: 80% 80%;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   ESTILOS PARA ICONOS Y NÚMEROS (PMR, Usuarios e Invitados)
+═══════════════════════════════════════════════════════════════ */
+
+/* Ocultar número en todas las butacas PMR */
+.seat.seat-pmr {
+  color: transparent !important;
+}
+
+/* 1. Modo ICONO (Primer asiento Orlado o Profesor): Muestra usuario.png */
+.seat.taken.seat-icon {
+  background-image: url('../images/usuario.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+  color: transparent !important; /* Oculta el número */
+}
+
+/* 2. Modo NÚMERO (Invitados): Muestra número de butaca */
+.seat.taken.seat-number {
+  color: #ffffff !important;
+  font-size: 8px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Efecto visual al pasar el ratón para asignar (Pulso azul) */
+.seat.selected-for-assign { 
+  box-shadow: 0 0 0 3px rgba(26, 137, 196, 0.4); 
+  animation: seatPulse 1.5s infinite; 
+  z-index: 10;
+}
+@keyframes seatPulse { 
+  0% { box-shadow: 0 0 0 0px rgba(26, 137, 196, 0.5); } 
+  70% { box-shadow: 0 0 0 6px rgba(26, 137, 196, 0); } 
+  100% { box-shadow: 0 0 0 0px rgba(26, 137, 196, 0); } 
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ESTILOS PARA ICONOS Y NÚMEROS (PMR, Usuarios e Invitados)
+═══════════════════════════════════════════════════════════════ */
+
+/* Ocultar número en todas las butacas PMR */
+.seat.seat-pmr {
+  color: transparent !important;
+}
+
+/* PMR Ocupado: Mantiene el icono sobre el color del alumno */
+.seat.seat-pmr.taken {
+  background-image: url('../images/pmr.png') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80% 80%;
+  color: transparent !important;
+}
+
+/* Modo ICONO (Orlado o Profesor): Muestra usuario.png */
+.seat.taken.seat-icon {
+  background-image: url('../images/usuario.png') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+  color: transparent !important; 
+}
+
+/* Modo NÚMERO (Invitados): Muestra número de butaca */
+.seat.taken.seat-number {
+  color: #ffffff !important;
+  font-size: 8px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
