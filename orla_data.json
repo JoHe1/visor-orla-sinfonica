@@ -3,825 +3,1221 @@
     {
       "id": 1,
       "name": "Jorge Lorenzo Lorenzo",
-      "seats": 10,
-      "color": "#C0392B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 2,
       "name": "Kimberly Casimiro Torres",
-      "seats": 10,
-      "color": "#D4840A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 3,
       "name": "Elisa-Marie Breeze Rebstock",
-      "seats": 10,
-      "color": "#16A085"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 4,
       "name": "Claudia Álvarez González",
-      "seats": 10,
-      "color": "#5B4FCF"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 5,
       "name": "Nestor Ortega Perez",
-      "seats": 10,
-      "color": "#C2185B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 6,
       "name": "Alberto Rivero Monzón",
-      "seats": 10,
-      "color": "#0277BD"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 7,
       "name": "Laura Aguiar Pérez",
-      "seats": 10,
-      "color": "#558B2F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 8,
       "name": "Samuel Déniz Santana",
-      "seats": 10,
-      "color": "#6D4C41"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 9,
       "name": "Karel Carracedo Santana",
-      "seats": 10,
-      "color": "#00838F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 10,
       "name": "Jose Mataix Perez",
-      "seats": 10,
-      "color": "#7B1FA2"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 11,
       "name": "Alejandro Alemán Alemán",
-      "seats": 10,
-      "color": "#E64A19"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 12,
       "name": "Amai Suárez Navarro",
-      "seats": 10,
-      "color": "#37474F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 13,
       "name": "Álvaro Rodríguez González",
-      "seats": 10,
-      "color": "#8D6E10"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 14,
       "name": "María Navarro Cruz",
-      "seats": 10,
-      "color": "#1565C0"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 15,
       "name": "Carlos Francisco Suárez Sauca",
-      "seats": 10,
-      "color": "#4A235A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 16,
       "name": "Gisela Isabel Belmonte Cruz",
-      "seats": 10,
-      "color": "#1B5E20"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 17,
       "name": "Juan López de Hierro de la Fuente",
-      "seats": 10,
-      "color": "#C0392B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 18,
       "name": "Gabriel Felipe Bernal Pinto",
-      "seats": 10,
-      "color": "#D4840A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 19,
       "name": "Luna Yue Hernández Guerra",
-      "seats": 10,
-      "color": "#16A085"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 20,
       "name": "Diego Marrero Ferrera",
-      "seats": 10,
-      "color": "#5B4FCF"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 21,
       "name": "Lucía Afonso Medina",
-      "seats": 10,
-      "color": "#C2185B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 22,
       "name": "Farid Sánchez Belmadi",
-      "seats": 10,
-      "color": "#0277BD"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 23,
       "name": "David García Vera",
-      "seats": 10,
-      "color": "#558B2F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 24,
       "name": "Diego Jesús Torrejón Cabrera",
-      "seats": 10,
-      "color": "#6D4C41"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 25,
       "name": "Nicolás Trujillo Estévez",
-      "seats": 10,
-      "color": "#00838F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 26,
       "name": "Daniel Talavera Hernández",
-      "seats": 10,
-      "color": "#7B1FA2"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 27,
       "name": "Sergio Muela Santos",
-      "seats": 10,
-      "color": "#E64A19"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 28,
       "name": "Alberto Guedes Martín",
-      "seats": 10,
-      "color": "#37474F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 29,
       "name": "Alejandro Lorenzo Del Toro Acosta",
-      "seats": 10,
-      "color": "#8D6E10"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 30,
       "name": "Daniel López Correas",
-      "seats": 10,
-      "color": "#1565C0"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 31,
       "name": "Owen Urdaneta Morales",
-      "seats": 10,
-      "color": "#4A235A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 32,
       "name": "Victor Blanco Davila",
-      "seats": 10,
-      "color": "#1B5E20"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 33,
       "name": "Rafael Suárez Saavedra",
-      "seats": 10,
-      "color": "#C0392B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 34,
       "name": "Javier González Benítez",
-      "seats": 10,
-      "color": "#D4840A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 35,
       "name": "Víctor López Hernández",
-      "seats": 10,
-      "color": "#16A085"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 36,
       "name": "Jorge González Benítez",
-      "seats": 10,
-      "color": "#5B4FCF"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 37,
       "name": "María Alonso León",
-      "seats": 10,
-      "color": "#C2185B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 38,
       "name": "Víctor Gil Bernal",
-      "seats": 10,
-      "color": "#0277BD"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 39,
       "name": "Darío José Iglesias San José",
-      "seats": 10,
-      "color": "#558B2F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 40,
       "name": "Lucía Hernández Nieves",
-      "seats": 10,
-      "color": "#6D4C41"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 41,
       "name": "José Luis Perdomo de Vega",
-      "seats": 10,
-      "color": "#00838F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 42,
       "name": "Jorge Cubero Toribio",
-      "seats": 10,
-      "color": "#7B1FA2"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 43,
       "name": "Adrián Ojeda Viera",
-      "seats": 10,
-      "color": "#E64A19"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|6|P"
     },
     {
       "id": 44,
       "name": "Manuel Alejandro Torrealba Torrealba",
-      "seats": 10,
-      "color": "#37474F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 45,
       "name": "Luis Perera Pérez",
-      "seats": 10,
-      "color": "#8D6E10"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 46,
       "name": "Javier Castilla Moreno",
-      "seats": 10,
-      "color": "#1565C0"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 47,
       "name": "Náyade García Torres",
-      "seats": 10,
-      "color": "#4A235A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 48,
       "name": "Wafa Azdad Triki",
-      "seats": 10,
-      "color": "#1B5E20"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 49,
       "name": "Saúl Expósito Morales",
-      "seats": 10,
-      "color": "#C0392B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 50,
       "name": "Juan Francisco Del Rosario Machin",
-      "seats": 10,
-      "color": "#D4840A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 51,
       "name": "Leslie Liu Romero Martín",
-      "seats": 10,
-      "color": "#16A085"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 52,
       "name": "Francisco Malillos Castellano",
-      "seats": 10,
-      "color": "#5B4FCF"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 53,
       "name": "Carlos Mireles Rodríguez",
-      "seats": 10,
-      "color": "#C2185B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 54,
       "name": "Jesús Santacruz Martín-Delgado",
-      "seats": 10,
-      "color": "#0277BD"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 55,
       "name": "Alejandro van Baumberghen Quintana",
-      "seats": 10,
-      "color": "#558B2F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 56,
       "name": "Silvia González Torres",
-      "seats": 10,
-      "color": "#6D4C41"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 57,
       "name": "Alejandro Armas Trujillo",
-      "seats": 10,
-      "color": "#00838F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 58,
       "name": "Sergio Acosta Quintana",
-      "seats": 10,
-      "color": "#7B1FA2"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 59,
       "name": "Raúl Trejo González",
-      "seats": 10,
-      "color": "#E64A19"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 60,
       "name": "Raúl Núñez Torres",
-      "seats": 10,
-      "color": "#37474F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 61,
       "name": "Eduardo Arbelo Rua-Figueroa",
-      "seats": 10,
-      "color": "#8D6E10"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 62,
       "name": "Gabriel Domínguez Torres",
-      "seats": 10,
-      "color": "#1565C0"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 63,
       "name": "Eduardo Gainza Koller",
-      "seats": 10,
-      "color": "#4A235A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 64,
       "name": "María Cabrera Vérgez",
-      "seats": 10,
-      "color": "#1B5E20"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 65,
       "name": "Augusto Ernesto Paolone Silva",
-      "seats": 10,
-      "color": "#C0392B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 66,
       "name": "Pablo Medina Quintana",
-      "seats": 10,
-      "color": "#D4840A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 67,
       "name": "Carlos Alonso Rodríguez",
-      "seats": 10,
-      "color": "#16A085"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 68,
       "name": "Dylan Alexander Castrillón Suárez",
-      "seats": 10,
-      "color": "#5B4FCF"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 69,
       "name": "Kevin José Falcón Armas",
-      "seats": 10,
-      "color": "#C2185B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 70,
       "name": "Asmae Ez zaim Driouch",
-      "seats": 10,
-      "color": "#0277BD"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 71,
       "name": "Rosmary Garcia Pedroza",
-      "seats": 10,
-      "color": "#558B2F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 72,
       "name": "Carlos Serradilla Rodriguez",
-      "seats": 10,
-      "color": "#6D4C41"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 73,
       "name": "Alejandro de Olózaga Ramírez",
-      "seats": 10,
-      "color": "#00838F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 74,
       "name": "Elena Artiles Morales",
-      "seats": 10,
-      "color": "#7B1FA2"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 75,
       "name": "Jesús Extraviz Suárez",
-      "seats": 10,
-      "color": "#E64A19"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 76,
       "name": "Ayman Asbai Ghoudan",
-      "seats": 10,
-      "color": "#37474F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 77,
       "name": "Joel Santana Alemán",
-      "seats": 10,
-      "color": "#8D6E10"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 78,
       "name": "Mario Pérez Carmona",
-      "seats": 10,
-      "color": "#1565C0"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 79,
       "name": "Alberto Redondo Álvarez de Sotomayor",
-      "seats": 10,
-      "color": "#4A235A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 80,
       "name": "Jesús Alberto Ortega Hernández",
-      "seats": 10,
-      "color": "#1B5E20"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 81,
       "name": "Paola Viera Suárez",
-      "seats": 10,
-      "color": "#C0392B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 82,
       "name": "David Suárez Martel",
-      "seats": 10,
-      "color": "#D4840A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 83,
       "name": "Juan Boissier García",
-      "seats": 10,
-      "color": "#16A085"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 84,
       "name": "Andrea Santana lópez",
-      "seats": 10,
-      "color": "#5B4FCF"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 85,
       "name": "Miguel Ángel Rodríguez Ruano",
-      "seats": 10,
-      "color": "#C2185B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 86,
       "name": "Alberto José Rodríguez Ruano",
-      "seats": 10,
-      "color": "#0277BD"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|8|P"
     },
     {
       "id": 87,
       "name": "Carlos Ruano Ramos",
-      "seats": 10,
-      "color": "#558B2F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 88,
       "name": "Mario García Abellán",
-      "seats": 10,
-      "color": "#6D4C41"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 89,
       "name": "Roberto Tejero Martín",
-      "seats": 10,
-      "color": "#00838F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 90,
       "name": "Laura Herrera Negrin",
-      "seats": 10,
-      "color": "#7B1FA2"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 91,
       "name": "Gorka Eymard Santana Cabrera",
-      "seats": 10,
-      "color": "#E64A19"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 92,
       "name": "José Manuel Díaz Hernández",
-      "seats": 10,
-      "color": "#37474F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 93,
       "name": "Aythami Pérez Vega",
-      "seats": 10,
-      "color": "#8D6E10"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 94,
       "name": "Daniel Gutierrez Recio",
-      "seats": 10,
-      "color": "#1565C0"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 95,
       "name": "Jaime Calzada Sánchez",
-      "seats": 10,
-      "color": "#4A235A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 96,
       "name": "Raúl Marrero Marichal",
-      "seats": 10,
-      "color": "#1B5E20"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 97,
       "name": "Eduardo Marrero Gonzalez",
-      "seats": 10,
-      "color": "#C0392B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 98,
       "name": "Alejandro Guerra Jiménez",
-      "seats": 10,
-      "color": "#D4840A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 99,
       "name": "Alejandro Santana Morera",
-      "seats": 10,
-      "color": "#16A085"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 100,
       "name": "Jorge Salvador Martel Negrín",
-      "seats": 10,
-      "color": "#5B4FCF"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 101,
       "name": "Mohamed Elouariachi Lamhamdi",
-      "seats": 10,
-      "color": "#C2185B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 102,
       "name": "Miguel Castellano Hernández",
-      "seats": 10,
-      "color": "#0277BD"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 103,
       "name": "Wei Li",
-      "seats": 10,
-      "color": "#558B2F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 104,
       "name": "Anthony Diego Avila Arias",
-      "seats": 10,
-      "color": "#6D4C41"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 105,
       "name": "Juan Carlos Rodríguez Ramírez",
-      "seats": 10,
-      "color": "#00838F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 106,
       "name": "Javier Sánchez Godoy",
-      "seats": 10,
-      "color": "#7B1FA2"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 107,
       "name": "Pablo López Monzón",
-      "seats": 10,
-      "color": "#E64A19"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 108,
       "name": "Nicolás Rey Alonso",
-      "seats": 10,
-      "color": "#37474F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 109,
       "name": "Nicolás Hernández Castro",
-      "seats": 10,
-      "color": "#8D6E10"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 110,
       "name": "Héctor Barbosa Artiles",
-      "seats": 10,
-      "color": "#1565C0"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 111,
       "name": "Zuleima Hernández Hernández",
-      "seats": 10,
-      "color": "#4A235A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 112,
       "name": "Carlos Mathias Osorio Rojas",
-      "seats": 10,
-      "color": "#1B5E20"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 113,
       "name": "Mohamed Oulad Haroun Zarkik",
-      "seats": 10,
-      "color": "#C0392B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 114,
       "name": "Néstor Déniz González",
-      "seats": 10,
-      "color": "#D4840A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 115,
       "name": "Esteban Trujillo Santana",
-      "seats": 10,
-      "color": "#16A085"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 116,
       "name": "Abel José Romero Tavío",
-      "seats": 10,
-      "color": "#5B4FCF"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|2|P"
     },
     {
       "id": 117,
       "name": "Adrián Ojeda Núñez",
-      "seats": 10,
-      "color": "#C2185B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|4|P"
     },
     {
       "id": 118,
       "name": "Alfredo Villarroya Roldós",
-      "seats": 10,
-      "color": "#0277BD"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 119,
       "name": "Gabriel Godoy Navarro",
-      "seats": 10,
-      "color": "#558B2F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 120,
       "name": "Carlos Álamo Peña",
-      "seats": 10,
-      "color": "#6D4C41"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 121,
       "name": "Saúl Antonio Cruz Pérez",
-      "seats": 10,
-      "color": "#00838F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 122,
       "name": "Meng Fei Dai",
-      "seats": 10,
-      "color": "#7B1FA2"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 123,
       "name": "David Miranda Campos",
-      "seats": 10,
-      "color": "#E64A19"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 124,
       "name": "Dunia Suárez Rodríguez",
-      "seats": 10,
-      "color": "#37474F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 125,
       "name": "Nahuel Cosme Díaz Vera",
-      "seats": 10,
-      "color": "#8D6E10"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 126,
       "name": "Pedro Batista Sosa",
-      "seats": 10,
-      "color": "#1565C0"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 127,
       "name": "Wail Ben el Hassane Boudhar",
-      "seats": 10,
-      "color": "#4A235A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 128,
       "name": "Lucía Motas Guedes",
-      "seats": 10,
-      "color": "#1B5E20"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 129,
       "name": "Jerónimo Omar Falcón Dávila",
-      "seats": 10,
-      "color": "#C0392B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 130,
       "name": "Oliver Juan Cabrera Volo",
-      "seats": 10,
-      "color": "#D4840A"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
     },
     {
       "id": 131,
       "name": "Luis Muñoz Sanz",
-      "seats": 10,
-      "color": "#16A085"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFB7B2"
     },
     {
       "id": 132,
       "name": "Eva Yuan Robaina Navarro",
-      "seats": 10,
-      "color": "#5B4FCF"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#FFDAC1"
     },
     {
       "id": 133,
       "name": "Santiago Concepción Estévez",
-      "seats": 10,
-      "color": "#C2185B"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#E2F0CB"
     },
     {
       "id": 134,
       "name": "Raúl Sánchez Santamaría",
-      "seats": 10,
-      "color": "#0277BD"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#B5EAD7"
     },
     {
       "id": 135,
       "name": "Miguel Darío Tovar Navarro",
-      "seats": 10,
-      "color": "#558B2F"
+      "seats": 11,
+      "type": "graduate",
+      "color": "#C7CEEA"
+    },
+    {
+      "id": 136,
+      "name": "Cayetano Guerra Artal",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFB7B2"
+    },
+    {
+      "id": 137,
+      "name": "Francisco Mario Hernandez Tejera",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFDAC1"
+    },
+    {
+      "id": 138,
+      "name": "Carmelo Ruben García Rodríguez",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#E2F0CB"
+    },
+    {
+      "id": 139,
+      "name": "Luis Álvarez León",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#B5EAD7"
+    },
+    {
+      "id": 140,
+      "name": "María Cristina Carmona Duarte",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#C7CEEA"
+    },
+    {
+      "id": 141,
+      "name": "José Évora Gómez",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFB7B2"
+    },
+    {
+      "id": 142,
+      "name": "José Javier Lorenzo Navarro",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFDAC1"
+    },
+    {
+      "id": 143,
+      "name": "Javier Sánchez Pérez",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#E2F0CB"
+    },
+    {
+      "id": 144,
+      "name": "Juan María Hernández Guerra",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#B5EAD7"
+    },
+    {
+      "id": 145,
+      "name": "Adrián Peñate Sánchez",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#C7CEEA"
+    },
+    {
+      "id": 146,
+      "name": "Victoria Torres Rodríguez",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFB7B2"
+    },
+    {
+      "id": 147,
+      "name": "María Teresa García Rodríguez",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFDAC1"
+    },
+    {
+      "id": 148,
+      "name": "Gabino Padrón Morales",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#E2F0CB"
+    },
+    {
+      "id": 149,
+      "name": "Rayco Sánchez García",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#B5EAD7"
+    },
+    {
+      "id": 150,
+      "name": "José Carlos Rodríguez Rodríguez",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#C7CEEA"
+    },
+    {
+      "id": 151,
+      "name": "Rafael Ricardo Suarez Vega",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFB7B2"
+    },
+    {
+      "id": 152,
+      "name": "María Dolores Afonso Suárez",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFDAC1"
+    },
+    {
+      "id": 153,
+      "name": "Antonio Andrés Ocón Carreras",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#E2F0CB"
+    },
+    {
+      "id": 154,
+      "name": "Axel Cabrera Rodríguez",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#B5EAD7"
+    },
+    {
+      "id": 155,
+      "name": "Gabriel de Blasio García",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#C7CEEA"
+    },
+    {
+      "id": 156,
+      "name": "José Daniel Hernández Sosa",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFB7B2"
+    },
+    {
+      "id": 157,
+      "name": "Oliverio Jesús Santana Jaria",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFDAC1"
+    },
+    {
+      "id": 158,
+      "name": "Juan de Dios Duque Martín de Oliva",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#E2F0CB"
+    },
+    {
+      "id": 159,
+      "name": "Nelson Monzón López",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#B5EAD7"
+    },
+    {
+      "id": 160,
+      "name": "José Ignacio Salas Cáceres",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#C7CEEA"
+    },
+    {
+      "id": 161,
+      "name": "José Miguel Santos Espino",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFB7B2"
+    },
+    {
+      "id": 162,
+      "name": "Octavio Mayor González",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFDAC1"
+    },
+    {
+      "id": 163,
+      "name": "José Juan Hernández Cabrera",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#E2F0CB"
+    },
+    {
+      "id": 164,
+      "name": "Juan Carlos Quevedo",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#B5EAD7"
+    },
+    {
+      "id": 165,
+      "name": "Agustín Trujillo del Pino",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#C7CEEA"
+    },
+    {
+      "id": 166,
+      "name": "Jose María Quinteiro González",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFB7B2"
+    },
+    {
+      "id": 167,
+      "name": "Zenón Hernández Figueroa",
+      "seats": 1,
+      "type": "teacher",
+      "color": "#FFDAC1"
     }
   ],
   "reservations": {
-    "platea|1|22|P": 1,
-    "platea|1|24|P": 1,
-    "platea|1|28|P": 1,
-    "platea|2|24|P": 1,
-    "platea|1|26|P": 1,
-    "platea|2|26|P": 1,
-    "platea|2|28|P": 1,
-    "platea|1|30|P": 1,
-    "platea|2|30|P": 1,
-    "platea|1|32|P": 1
+    "platea|1|2|P": 116,
+    "platea|1|22|P": 116,
+    "platea|1|24|P": 116,
+    "platea|1|26|P": 116,
+    "platea|1|28|P": 116,
+    "platea|1|30|P": 116,
+    "platea|1|32|P": 116,
+    "platea|1|34|P": 116,
+    "platea|1|38|P": 116,
+    "platea|1|36|P": 116,
+    "platea|1|4|P": 117,
+    "platea|2|26|P": 117,
+    "platea|2|28|P": 117,
+    "platea|2|30|P": 117,
+    "platea|2|32|P": 117,
+    "platea|2|34|P": 117,
+    "platea|2|36|P": 117,
+    "platea|2|38|P": 117,
+    "platea|2|40|P": 117,
+    "platea|3|26|P": 117,
+    "platea|2|24|P": 117,
+    "platea|1|6|P": 43,
+    "platea|3|28|P": 43,
+    "platea|3|30|P": 43,
+    "platea|3|32|P": 43,
+    "platea|3|34|P": 43,
+    "platea|3|36|P": 43,
+    "platea|3|38|P": 43,
+    "platea|3|40|P": 43,
+    "platea|4|28|P": 43,
+    "platea|4|30|P": 43,
+    "platea|4|32|P": 43,
+    "platea|1|8|P": 86,
+    "platea|4|34|P": 86,
+    "platea|4|36|P": 86,
+    "platea|4|38|P": 86,
+    "platea|4|40|P": 86,
+    "platea|4|42|P": 86,
+    "platea|5|30|P": 86,
+    "platea|5|32|P": 86,
+    "platea|5|34|P": 86,
+    "platea|5|36|P": 86,
+    "platea|5|38|P": 86
   },
-  "nextId": 136
+  "nextId": 168
 }

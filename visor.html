@@ -9,7 +9,9 @@
   /* Sobrescribimos la cuadrícula para que ocupe toda la pantalla sin el Sidebar */
   .app { grid-template-columns: 1fr; }
   .sidebar { display: none; }
-  .seat { cursor: default; } /* Quitamos el cursor de la manita en los asientos */
+  
+  /* Quitamos el cursor de la manita en los asientos para indicar que no es interactivo */
+  .seat { cursor: default; } 
   .seat:hover { transform: scale(1.35); border-color: #555; }
 
   /* Ocultamos las barras de scroll pero mantenemos los topes nativos */
@@ -20,6 +22,29 @@
   .hall::-webkit-scrollbar {
     display: none; /* Chrome, Safari y Opera */
   }
+
+  /* Estilos específicos para el buscador del visor */
+  .visor-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .visor-search input {
+    padding: 7px 12px;
+    border: 1px solid var(--border2);
+    border-radius: 6px;
+    font-size: 13px;
+    width: 260px;
+    color: var(--text);
+    background: var(--surface);
+  }
+  .visor-search input:focus {
+    outline: none;
+    border-color: var(--info-brd);
+    box-shadow: 0 0 0 3px rgba(26, 86, 196, 0.1);
+  }
 </style>
 </head>
 <body>
@@ -28,9 +53,20 @@
   <div class="main">
     <div class="toolbar">
       <h1>Sala Sinfónica · Plano de Asientos Oficial</h1>
-      <div class="legend">
+      
+      <div class="legend" style="margin-left: 20px;">
         <div class="legend-dot" style="background:var(--surface2)"></div>Libre
       </div>
+      <div class="legend">
+        <div class="legend-dot" style="background:#888;border-color:transparent"></div>Reservado
+      </div>
+
+      <div class="visor-search">
+        <label for="search-input" style="font-size:12px; font-weight:600; color:var(--text2);">Encuentra tu butaca:</label>
+        <input type="text" id="search-input" list="student-datalist" placeholder="🔍 Escribe tu nombre..." oninput="handleSearch(event)">
+        <datalist id="student-datalist"></datalist>
+      </div>
+
     </div>
     
     <div class="hall" id="hall"></div>
@@ -44,33 +80,72 @@
 
 <script>
 let state = { students: [], reservations: {} };
+let selStu = null; // Alumno buscado actualmente
 
-/* Carga el JSON estático directamente */
+/* 1. Carga el JSON generado por el administrador */
 async function fetchData() {
   try {
-    // Busca el archivo json en la misma carpeta
     const r = await fetch('orla_data.json');
     if (r.ok) {
       state = await r.json();
+      populateSearch(); // Llenar el desplegable de nombres
     }
   } catch (err) {
-    console.error("Error al cargar los datos", err);
+    console.error("Error al cargar orla_data.json. Asegúrate de haber guardado cambios en la página de gestión.", err);
   }
   renderHall();
 }
 
+/* 2. Rellenar el <datalist> para autocompletar en el buscador */
+function populateSearch() {
+  const dl = document.getElementById('student-datalist');
+  dl.innerHTML = '';
+  
+  // Ordenar alfabéticamente para que sea fácil buscar
+  const sorted = [...state.students].sort((a,b) => a.name.localeCompare(b.name));
+  
+  sorted.forEach(stu => {
+    const opt = document.createElement('option');
+    opt.value = stu.name;
+    dl.appendChild(opt);
+  });
+}
+
+/* 3. Evento al escribir en el buscador */
+function handleSearch(e) {
+  const val = e.target.value.trim().toLowerCase();
+  if (!val) {
+    selStu = null;
+    renderHall();
+    return;
+  }
+  
+  // Buscar si hay una coincidencia exacta
+  const exactMatch = state.students.find(s => s.name.toLowerCase() === val);
+  if (exactMatch) {
+    selStu = exactMatch;
+    renderHall(); // Redibujar para iluminar sus butacas
+  } else {
+    selStu = null;
+    renderHall();
+  }
+}
+
+/* ════════════════════════════════════════════════════════════
+   RENDER DEL PLANO (Idéntico a index.html)
+════════════════════════════════════════════════════════════ */
 function renderHall() {
   const hall = document.getElementById('hall');
+  const sx = hall.scrollLeft, sy = hall.scrollTop;
   hall.innerHTML = '';
-  const inner = el('div', 'hall-inner');
 
+  const inner = el('div', 'hall-inner');
   const anf2Rows   = LAYOUT.filter(r => r.zone === 'anf2').sort((a,b) => b.row - a.row);
   const anf1Rows   = LAYOUT.filter(r => r.zone === 'anf1').sort((a,b) => b.row - a.row);
   const plateaRows = LAYOUT.filter(r => r.zone === 'platea');
 
-  // ── SUPERIOR (Galerías + Anfiteatros) ──
+  // ── SUPERIOR ──
   const topSection = el('div', 'top-section');
-
   const colPar = el('div', 'galeria-col gal-par-col');
   const lblPar = el('div', 'gal-lbl'); lblPar.textContent = 'GALERÍA PAR'; colPar.appendChild(lblPar);
   GALERIA_PAR.forEach(s => colPar.appendChild(makeSeat(s, { zone: 'galeria', row: 1 })));
@@ -88,7 +163,6 @@ function renderHall() {
   const anf1Labels = el('div', 'section-labels');
   anf1Labels.innerHTML = `<span class="sec-lbl sec-lat">Lat. Par Ext.</span><span class="sec-lbl sec-lat">Lat. Par Int.</span><span class="sec-lbl sec-cen">Cen. Par</span><span class="sec-lbl sec-cen">Cen. Impar</span><span class="sec-lbl sec-lat">Lat. Impar Int.</span><span class="sec-lbl sec-lat">Lat. Impar Ext.</span>`;
   anfCenter.appendChild(anf1Labels);
-
   topSection.appendChild(anfCenter);
 
   const colImp = el('div', 'galeria-col gal-imp-col');
@@ -97,19 +171,18 @@ function renderHall() {
   topSection.appendChild(colImp);
 
   inner.appendChild(topSection);
-
+  
   // ── PLATEA ──
   inner.appendChild(makeZoneHeader('Platea'));
   plateaRows.forEach(row => inner.appendChild(makeFullRow(row)));
+
   const plateaLabels = el('div', 'section-labels');
   plateaLabels.innerHTML = `<span class="sec-lbl sec-lat">Lateral Par</span><span class="sec-lbl sec-cen">Central Par</span><span class="sec-lbl sec-cen">Central Impar</span><span class="sec-lbl sec-lat">Lateral Impar</span>`;
   inner.appendChild(plateaLabels);
 
-  const st = el('div', 'stage-block');
-  st.textContent = 'E S C E N A R I O';
-  inner.appendChild(st);
-
+  const st = el('div', 'stage-block'); st.textContent = 'E S C E N A R I O'; inner.appendChild(st);
   hall.appendChild(inner);
+  hall.scrollLeft = sx; hall.scrollTop = sy;
 }
 
 function makeZoneHeader(text) { const h = el('div', 'zone-header'); h.textContent = text; return h; }
@@ -126,20 +199,14 @@ function makeSplitRow(rowDef, showPalcoGap = false) {
     return arr.slice(s, e + 1);
   };
 
-  const parTrimmed = trimAisles(parSeats);
-  const impTrimmed = trimAisles(impSeats);
-
-  const hasCen = rowDef.seats.some(s => s.section === 'cen-par');
-  const rnClass = (rowDef.zone === 'anf2' && !hasCen) ? 'row-num row-num-light' : 'row-num';
-  const rlClass = (rowDef.zone === 'anf2' && !hasCen) ? 'row-lbl row-lbl-light' : 'row-lbl';
+  const rnClass = (rowDef.zone === 'anf2' && !rowDef.seats.some(s => s.section === 'cen-par')) ? 'row-num row-num-light' : 'row-num';
   const rn = el('div', rnClass); rn.textContent = rowDef.row; wrapper.appendChild(rn);
 
   const parSide = el('div', 'split-side split-par');
-  parTrimmed.forEach(s => {
+  trimAisles(parSeats).forEach(s => {
     if (s.aisle) { 
       const aisleEl = el('div', s.label ? 'aisle aisle-label' : 'aisle');
-      if (s.label) aisleEl.textContent = s.label;
-      parSide.appendChild(aisleEl); return; 
+      if (s.label) aisleEl.textContent = s.label; parSide.appendChild(aisleEl); return; 
     }
     parSide.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef));
   });
@@ -150,76 +217,98 @@ function makeSplitRow(rowDef, showPalcoGap = false) {
   wrapper.appendChild(gap);
 
   const impSide = el('div', 'split-side split-imp');
-  impTrimmed.forEach(s => {
+  trimAisles(impSeats).forEach(s => {
     if (s.aisle) { 
       const aisleEl = el('div', s.label ? 'aisle aisle-label' : 'aisle');
-      if (s.label) aisleEl.textContent = s.label;
-      impSide.appendChild(aisleEl); return; 
+      if (s.label) aisleEl.textContent = s.label; impSide.appendChild(aisleEl); return; 
     }
     impSide.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef));
   });
   wrapper.appendChild(impSide);
 
-  const rl = el('div', rlClass); rl.textContent = rowDef.row; wrapper.appendChild(rl);
+  const rl = el('div', rnClass.replace('num', 'lbl')); rl.textContent = rowDef.row; wrapper.appendChild(rl);
   return wrapper;
 }
 
 function makeFullRow(rowDef) {
   const rowEl = el('div', 'seat-row');
   const rn = el('div', 'row-num'); rn.textContent = rowDef.row; rowEl.appendChild(rn);
+
   let aisleCount = 0;
   rowDef.seats.forEach(s => {
     if (s.aisle) {
       aisleCount++;
-      const hasLatPar = rowDef.seats.some(s => s.section === 'lat-par');
-      const hasLatImp = rowDef.seats.some(s => s.section === 'lat-imp');
-      const isLabel = (aisleCount === 1 && hasLatPar) || (aisleCount === 3 && hasLatImp);
+      const isLabel = (aisleCount === 1 && rowDef.seats.some(x => x.section === 'lat-par')) || 
+                      (aisleCount === 3 && rowDef.seats.some(x => x.section === 'lat-imp'));
       const aisleEl = el('div', isLabel ? 'aisle aisle-label' : 'aisle');
-      if (isLabel) aisleEl.textContent = rowDef.row;
-      rowEl.appendChild(aisleEl); return;
+      if (isLabel) aisleEl.textContent = rowDef.row; rowEl.appendChild(aisleEl); return;
     }
     rowEl.appendChild(makeSeat(s, rowDef));
   });
+
   const rl = el('div', 'row-lbl'); rl.textContent = rowDef.row; rowEl.appendChild(rl);
   return rowEl;
 }
 
+// LÓGICA DE DIBUJO DE BUTACAS (Idéntica pero Solo Lectura)
 function makeSeat(s, rowDef) {
   const key = seatKey(rowDef.zone, rowDef.row, s.n, s.s);
   const sEl = el('div', 'seat');
   
-  if (s.n >= 9000 || s.pmr) { sEl.classList.add('seat-pmr'); }
+  const isPMR = (s.n >= 9000 || s.pmr);
+  if (isPMR) { sEl.classList.add('seat-pmr'); }
 
   const sid = state.reservations[key];
   if (sid) {
     const stu = getStu(sid);
-    if (stu) { sEl.classList.add('taken'); sEl.style.background = stu.color; }
+    if (stu) { 
+      sEl.classList.add('taken'); 
+      sEl.style.backgroundColor = stu.color; 
+      
+      // ⚠️ APLICAR ILUMINACIÓN SI SE HA BUSCADO ESTE ALUMNO
+      if (selStu && selStu.id === stu.id) {
+          sEl.classList.add('highlighted-seat');
+      }
+      
+      if (!isPMR) {
+         if (stu.type === 'teacher') {
+             sEl.classList.add('seat-icon');
+         } else {
+             const assignedKeys = Object.keys(state.reservations).filter(k => state.reservations[k] === stu.id).sort();
+             const isPrimary = stu.primarySeat ? (stu.primarySeat === key) : (key === assignedKeys[0]);
+             
+             if (isPrimary) {
+                 sEl.classList.add('seat-icon');
+             } else {
+                 sEl.classList.add('seat-number');
+                 sEl.textContent = s.n;
+             }
+         }
+      }
+    }
+  } else {
+    // Libre
+    if (!isPMR) {
+        sEl.style.color = 'var(--text3)'; sEl.style.fontSize = '8px';
+        sEl.style.display = 'flex'; sEl.style.alignItems = 'center'; sEl.style.justifyContent = 'center';
+        sEl.textContent = s.n;
+    }
   }
   
   sEl.addEventListener('mouseenter', ev => showTip(ev, key, rowDef, s));
   sEl.addEventListener('mouseleave', hideTip);
-  // ⚠️ ELIMINADO EL EVENTO CLIC (Es solo visor)
   
+  // ⚠️ ELIMINADOS LOS EVENTOS DE CLICK Y CONTEXTMENU PARA QUE SEA SOLO VISOR
   return sEl;
 }
 
+/* ════════════════════════════════════════════════════════════
+   TOOLTIP (Solo Lectura)
+════════════════════════════════════════════════════════════ */
 function showTip(e, key, rowDef, s) {
   const tip = document.getElementById('tip');
-  const z   = rowDef.zone === 'platea' ? 'Platea'
-             : rowDef.zone === 'anf1'  ? 'Anfiteatro 1°'
-             : rowDef.zone === 'anf2'  ? 'Anfiteatro 2°' : 'Galería';
-             
-  const secLabel = s.section === 'lat-par'     ? 'Lateral Par'
-                 : s.section === 'lat-par-int' ? 'Lateral Par (int.)'
-                 : s.section === 'lat-par-ext' ? 'Lateral Par (ext.)'
-                 : s.section === 'cen-par'     ? 'Central Par'
-                 : s.section === 'cen-imp'     ? 'Central Impar'
-                 : s.section === 'lat-imp'     ? 'Lateral Impar'
-                 : s.section === 'lat-imp-int' ? 'Lateral Impar (int.)'
-                 : s.section === 'lat-imp-ext' ? 'Lateral Impar (ext.)'
-                 : s.section === 'gal-par'     ? 'Galería Par'
-                 : s.section === 'gal-imp'     ? 'Galería Impar' : '';
-                 
+  const z   = rowDef.zone === 'platea' ? 'Platea' : rowDef.zone === 'anf1' ? 'Anfiteatro 1°' : rowDef.zone === 'anf2' ? 'Anfiteatro 2°' : 'Galería';
+  const secLabel = s.section === 'lat-par' ? 'Lateral Par' : s.section === 'lat-par-int' ? 'Lateral Par (int.)' : s.section === 'lat-par-ext' ? 'Lateral Par (ext.)' : s.section === 'cen-par' ? 'Central Par' : s.section === 'cen-imp' ? 'Central Impar' : s.section === 'lat-imp' ? 'Lateral Impar' : s.section === 'lat-imp-int' ? 'Lateral Impar (int.)' : s.section === 'lat-imp-ext' ? 'Lateral Impar (ext.)' : s.section === 'gal-par' ? 'Galería Par' : s.section === 'gal-imp' ? 'Galería Impar' : '';
   const sid = state.reservations[key];
   
   let html  = `<strong>${z}${rowDef.row ? ' · Fila ' + rowDef.row : ''} · Butaca ${s.n}</strong>`;
@@ -227,18 +316,26 @@ function showTip(e, key, rowDef, s) {
   
   if (sid) {
     const stu = getStu(sid);
-    if (stu) html += `<br><span style="color:${stu.color}">●</span> ${stu.name}`;
-    // ⚠️ ELIMINADO EL TEXTO "Clic para liberar"
+    if (stu) {
+      const typeStr = stu.type === 'teacher' ? '(Profesor)' : '(Orlado)';
+      html += `<br><span style="color:${stu.color}">●</span> ${stu.name} <small style="color:#999">${typeStr}</small>`;
+      if (stu.type === 'teacher') html += `<br><span style="color:#22c55e;font-size:10px">Asiento del Profesor</span>`;
+      else {
+          const keys = Object.keys(state.reservations).filter(k => state.reservations[k] === stu.id).sort();
+          const isPrimary = stu.primarySeat ? (stu.primarySeat === key) : (key === keys[0]);
+          if (isPrimary) html += `<br><span style="color:#22c55e;font-size:10px">Asiento del Orlado</span>`;
+          else html += `<br><span style="color:#94a3b8;font-size:10px">Asiento de Invitado</span>`;
+      }
+    }
+    // ⚠️ ELIMINADO: "Clic para liberar" 
   } else {
     html += '<br><small style="color:#999">Butaca Libre</small>';
   }
-  
   tip.innerHTML = html; tip.style.display = 'block'; moveTip(e);
 }
 
 function moveTip(e) {
-  const t = document.getElementById('tip');
-  let x = e.clientX + 14; let y = e.clientY - 8;
+  const t = document.getElementById('tip'); let x = e.clientX + 14; let y = e.clientY - 8;
   t.style.left = x + 'px'; t.style.top  = y + 'px';
   const rect = t.getBoundingClientRect();
   if (rect.right > window.innerWidth) x = e.clientX - rect.width - 14;
@@ -246,11 +343,11 @@ function moveTip(e) {
   t.style.left = x + 'px'; t.style.top  = y + 'px';
 }
 function hideTip() { document.getElementById('tip').style.display = 'none'; }
-document.addEventListener('mousemove', e => {
-  const t = document.getElementById('tip');
-  if (t.style.display !== 'none') moveTip(e);
-});
+document.addEventListener('mousemove', e => { if (document.getElementById('tip').style.display !== 'none') moveTip(e); });
 
+/* ════════════════════════════════════════════════════════════
+   HELPERS Y ARRASTRE
+════════════════════════════════════════════════════════════ */
 function el(tag, cls) { const e = document.createElement(tag); if (cls) e.className = cls; return e; }
 function getStu(id) { return state.students.find(s => s.id === id); }
 
