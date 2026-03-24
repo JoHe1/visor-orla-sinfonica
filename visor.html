@@ -6,69 +6,40 @@
 <title>Visor de Orla · Sala Sinfónica</title>
 <link rel="stylesheet" href="style/orla.css">
 <style>
-  /* Sobrescribimos la cuadrícula para que ocupe toda la pantalla sin el Sidebar */
-  .app { grid-template-columns: 1fr; }
-  .sidebar { display: none; }
-  
-  /* Quitamos el cursor de la manita en los asientos para indicar que no es interactivo */
-  .seat { cursor: default; } 
-  .seat:hover { transform: scale(1.35); border-color: #555; }
-
-  /* Ocultamos las barras de scroll pero mantenemos los topes nativos */
-  .hall {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE y Edge */
-  }
-  .hall::-webkit-scrollbar {
-    display: none; /* Chrome, Safari y Opera */
-  }
-
-  /* Estilos específicos para el buscador del visor */
-  .visor-search {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: auto;
-    margin-right: 20px;
-  }
-  .visor-search input {
-    padding: 7px 12px;
-    border: 1px solid var(--border2);
-    border-radius: 6px;
-    font-size: 13px;
-    width: 260px;
-    color: var(--text);
-    background: var(--surface);
-  }
-  .visor-search input:focus {
-    outline: none;
-    border-color: var(--info-brd);
-    box-shadow: 0 0 0 3px rgba(26, 86, 196, 0.1);
-  }
+  /* Ajustes extra para el visor público (Cursor normal en butacas) */
+  .seat { cursor: default !important; }
 </style>
 </head>
 <body>
 <div class="app">
 
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h2>🎓 Visor de Orla</h2>
+      <p>Selecciona tu nombre para localizar tu butaca</p>
+    </div>
+    <div class="meta-bar">
+      <span id="total-info">Cargando...</span>
+      <span class="save-dot ok" title="Sincronizado con el servidor" style="background:#16a34a; opacity:1;"></span>
+    </div>
+    
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="🔍 Buscar por nombre..." oninput="renderSidebar()">
+    </div>
+
+    <div class="student-list" id="student-list"></div>
+  </div>
+
   <div class="main">
     <div class="toolbar">
-      <h1>Sala Sinfónica · Plano de Asientos Oficial</h1>
-      
-      <div class="legend" style="margin-left: 20px;">
+      <h1>Sala Sinfónica · Plano Oficial de Asientos</h1>
+      <div class="legend">
         <div class="legend-dot" style="background:var(--surface2)"></div>Libre
       </div>
       <div class="legend">
         <div class="legend-dot" style="background:#888;border-color:transparent"></div>Reservado
       </div>
-
-      <div class="visor-search">
-        <label for="search-input" style="font-size:12px; font-weight:600; color:var(--text2);">Encuentra tu butaca:</label>
-        <input type="text" id="search-input" list="student-datalist" placeholder="🔍 Escribe tu nombre..." oninput="handleSearch(event)">
-        <datalist id="student-datalist"></datalist>
-      </div>
-
     </div>
-    
     <div class="hall" id="hall"></div>
   </div>
 
@@ -79,61 +50,39 @@
 <script src="layout.js"></script>
 
 <script>
-let state = { students: [], reservations: {} };
-let selStu = null; // Alumno buscado actualmente
+const COLORS = [
+  '#FFB7B2', '#FFDAC1', '#E2F0CB', '#B5EAD7', '#C7CEEA'
+];
+// ⚠️ Usamos la misma ruta exacta que el index.html para garantizar que coge los mismos datos
+const API = 'http://localhost:8000/api/data';
 
-/* 1. Carga el JSON generado por el administrador */
+let state = { students: [], reservations: {} };
+let selStu = null; // Alumno seleccionado para iluminar butacas
+
+/* ════════════════════════════════════════════════════════════
+   CARGA DE DATOS DESDE EL SERVIDOR (Ignorando caché)
+════════════════════════════════════════════════════════════ */
 async function fetchData() {
   try {
-    const r = await fetch('orla_data.json');
-    if (r.ok) {
-      state = await r.json();
-      populateSearch(); // Llenar el desplegable de nombres
+    const r = await fetch(API, { cache: 'no-store', signal: AbortSignal.timeout(2000) });
+    if (r.ok) { 
+      const d = await r.json(); 
+      if (d && d.students && d.students.length > 0) { 
+        state = d; 
+        state.students.forEach((stu, i) => stu.color = COLORS[i % COLORS.length]);
+      }
     }
   } catch (err) {
-    console.error("Error al cargar orla_data.json. Asegúrate de haber guardado cambios en la página de gestión.", err);
+    console.error("Error conectando con el servidor:", err);
   }
-  renderHall();
-}
-
-/* 2. Rellenar el <datalist> para autocompletar en el buscador */
-function populateSearch() {
-  const dl = document.getElementById('student-datalist');
-  dl.innerHTML = '';
-  
-  // Ordenar alfabéticamente para que sea fácil buscar
-  const sorted = [...state.students].sort((a,b) => a.name.localeCompare(b.name));
-  
-  sorted.forEach(stu => {
-    const opt = document.createElement('option');
-    opt.value = stu.name;
-    dl.appendChild(opt);
-  });
-}
-
-/* 3. Evento al escribir en el buscador */
-function handleSearch(e) {
-  const val = e.target.value.trim().toLowerCase();
-  if (!val) {
-    selStu = null;
-    renderHall();
-    return;
-  }
-  
-  // Buscar si hay una coincidencia exacta
-  const exactMatch = state.students.find(s => s.name.toLowerCase() === val);
-  if (exactMatch) {
-    selStu = exactMatch;
-    renderHall(); // Redibujar para iluminar sus butacas
-  } else {
-    selStu = null;
-    renderHall();
-  }
+  render();
 }
 
 /* ════════════════════════════════════════════════════════════
-   RENDER DEL PLANO (Idéntico a index.html)
+   RENDER DEL PLANO
 ════════════════════════════════════════════════════════════ */
+function render() { renderHall(); renderSidebar(); }
+
 function renderHall() {
   const hall = document.getElementById('hall');
   const sx = hall.scrollLeft, sy = hall.scrollTop;
@@ -144,7 +93,6 @@ function renderHall() {
   const anf1Rows   = LAYOUT.filter(r => r.zone === 'anf1').sort((a,b) => b.row - a.row);
   const plateaRows = LAYOUT.filter(r => r.zone === 'platea');
 
-  // ── SUPERIOR ──
   const topSection = el('div', 'top-section');
   const colPar = el('div', 'galeria-col gal-par-col');
   const lblPar = el('div', 'gal-lbl'); lblPar.textContent = 'GALERÍA PAR'; colPar.appendChild(lblPar);
@@ -171,8 +119,6 @@ function renderHall() {
   topSection.appendChild(colImp);
 
   inner.appendChild(topSection);
-  
-  // ── PLATEA ──
   inner.appendChild(makeZoneHeader('Platea'));
   plateaRows.forEach(row => inner.appendChild(makeFullRow(row)));
 
@@ -250,7 +196,6 @@ function makeFullRow(rowDef) {
   return rowEl;
 }
 
-// LÓGICA DE DIBUJO DE BUTACAS (Idéntica pero Solo Lectura)
 function makeSeat(s, rowDef) {
   const key = seatKey(rowDef.zone, rowDef.row, s.n, s.s);
   const sEl = el('div', 'seat');
@@ -265,7 +210,7 @@ function makeSeat(s, rowDef) {
       sEl.classList.add('taken'); 
       sEl.style.backgroundColor = stu.color; 
       
-      // ⚠️ APLICAR ILUMINACIÓN SI SE HA BUSCADO ESTE ALUMNO
+      // Iluminación si el usuario ha sido buscado/seleccionado
       if (selStu && selStu.id === stu.id) {
           sEl.classList.add('highlighted-seat');
       }
@@ -298,12 +243,82 @@ function makeSeat(s, rowDef) {
   sEl.addEventListener('mouseenter', ev => showTip(ev, key, rowDef, s));
   sEl.addEventListener('mouseleave', hideTip);
   
-  // ⚠️ ELIMINADOS LOS EVENTOS DE CLICK Y CONTEXTMENU PARA QUE SEA SOLO VISOR
+  // ⚠️ ELIMINADOS LOS EVENTOS DE CLICK Y CLICK DERECHO (MODO VISOR)
+  
   return sEl;
 }
 
 /* ════════════════════════════════════════════════════════════
-   TOOLTIP (Solo Lectura)
+   RENDER SIDEBAR (Modo Visor)
+════════════════════════════════════════════════════════════ */
+function renderSidebar() {
+  const list = document.getElementById('student-list');
+  list.innerHTML = '';
+  let total = 0;
+
+  state.students.forEach(stu => { total += usedSeats(stu.id); });
+  document.getElementById('total-info').textContent = `${total} asignados · ${state.students.length} personas`;
+
+  const searchInput = document.getElementById('search-input');
+  const term = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+  let filtered = state.students.filter(stu => stu.name.toLowerCase().includes(term));
+  filtered.sort((a, b) => a.name.localeCompare(b.name));
+
+  const grads = filtered.filter(s => s.type !== 'teacher');
+  const teachers = filtered.filter(s => s.type === 'teacher');
+
+  if (grads.length > 0) {
+    const h = el('div', 'zone-header'); h.textContent = `Orlados (${grads.length})`;
+    h.style.margin = "10px 0 5px 0"; list.appendChild(h);
+    grads.forEach(stu => list.appendChild(createStudentCard(stu)));
+  }
+
+  if (teachers.length > 0) {
+    const h = el('div', 'zone-header'); h.textContent = `Profesorado (${teachers.length})`;
+    h.style.margin = "10px 0 5px 0"; list.appendChild(h);
+    teachers.forEach(stu => list.appendChild(createStudentCard(stu)));
+  }
+}
+
+function createStudentCard(stu) {
+  const used = usedSeats(stu.id);
+  const pct  = stu.seats > 0 ? Math.min(100, Math.round(used / stu.seats * 100)) : 0;
+  const keys = Object.entries(state.reservations).filter(([, v]) => v === stu.id).map(([k]) => k).sort();
+  
+  const pills = keys.map(k => {
+    const p = k.split('|');
+    const z = p[0] === 'platea' ? 'P' : p[0] === 'anf1' ? 'A1' : p[0] === 'galeria' ? 'G' : 'A2';
+    // ⚠️ Eliminado el evento onclick="freeSeat(...)" de las pastillas
+    return `<span class="seat-pill" style="background:${stu.color}; cursor:default;">${z} F${p[1]}·${p[2]}</span>`;
+  }).join('');
+
+  const card = el('div', 'student-card' + (selStu && selStu.id === stu.id ? ' selected' : ''));
+  const badge = stu.type === 'teacher' ? '👨‍🏫 ' : '';
+
+  card.innerHTML = `
+    <div class="student-top">
+      <div class="student-dot" style="background:${stu.color}"></div>
+      <span class="student-name" title="${stu.name}">${badge}${stu.name}</span>
+      <span class="student-count">${used}/${stu.seats}</span>
+      </div>
+    <div class="stu-bar">
+      <div class="stu-bar-fill" style="width:${pct}%;background:${stu.color}"></div>
+    </div>
+    <div class="seat-pills">
+      ${pills || '<span class="no-seats">Sin asientos asignados</span>'}
+    </div>`;
+
+  card.addEventListener('click', () => { 
+    selStu = (selStu && selStu.id === stu.id) ? null : stu; 
+    renderSidebar(); 
+    renderHall(); // Actualizar iluminación en el plano
+  });
+  return card;
+}
+
+/* ════════════════════════════════════════════════════════════
+   TOOLTIP (Modo Visor)
 ════════════════════════════════════════════════════════════ */
 function showTip(e, key, rowDef, s) {
   const tip = document.getElementById('tip');
@@ -327,7 +342,7 @@ function showTip(e, key, rowDef, s) {
           else html += `<br><span style="color:#94a3b8;font-size:10px">Asiento de Invitado</span>`;
       }
     }
-    // ⚠️ ELIMINADO: "Clic para liberar" 
+    // ⚠️ Eliminado el mensaje de "Clic para liberar"
   } else {
     html += '<br><small style="color:#999">Butaca Libre</small>';
   }
@@ -350,40 +365,27 @@ document.addEventListener('mousemove', e => { if (document.getElementById('tip')
 ════════════════════════════════════════════════════════════ */
 function el(tag, cls) { const e = document.createElement(tag); if (cls) e.className = cls; return e; }
 function getStu(id) { return state.students.find(s => s.id === id); }
+function usedSeats(id) { return Object.values(state.reservations).filter(v => v === id).length; }
 
-// ── Panning Logic (Con límites nativos) ──
 const dragHall = document.getElementById('hall');
-let isDown = false;
-let startX, startY, scrollLeft, scrollTop;
+let isDown = false; let startX, startY, scrollLeft, scrollTop;
+dragHall.style.cursor = 'grab';
 
 dragHall.addEventListener('mousedown', (e) => {
-  if (e.target.closest('.seat')) return;
-  isDown = true;
-  dragHall.style.cursor = 'grabbing';
-  startX = e.pageX - dragHall.offsetLeft;
-  startY = e.pageY - dragHall.offsetTop;
-  scrollLeft = dragHall.scrollLeft;
-  scrollTop = dragHall.scrollTop;
+  if (e.target.closest('.seat') || e.target.closest('.btn')) return;
+  isDown = true; dragHall.style.cursor = 'grabbing';
+  startX = e.pageX - dragHall.offsetLeft; startY = e.pageY - dragHall.offsetTop;
+  scrollLeft = dragHall.scrollLeft; scrollTop = dragHall.scrollTop;
 });
-
-dragHall.addEventListener('mouseleave', () => { 
-  isDown = false; 
-  dragHall.style.cursor = 'grab'; 
-});
-window.addEventListener('mouseup', () => { 
-  isDown = false; 
-  dragHall.style.cursor = 'grab'; 
-});
-
+dragHall.addEventListener('mouseleave', () => { if(!isDown) return; isDown = false; dragHall.style.cursor = 'grab'; });
+dragHall.addEventListener('mouseup', () => { if(!isDown) return; isDown = false; dragHall.style.cursor = 'grab'; });
 dragHall.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - dragHall.offsetLeft;
-  const y = e.pageY - dragHall.offsetTop;
-  dragHall.scrollLeft = scrollLeft - (x - startX);
-  dragHall.scrollTop = scrollTop - (y - startY);
+  if (!isDown) return; e.preventDefault();
+  const x = e.pageX - dragHall.offsetLeft; const y = e.pageY - dragHall.offsetTop;
+  dragHall.scrollLeft = scrollLeft - (x - startX); dragHall.scrollTop = scrollTop - (y - startY);
 });
 
+// Arrancar visor
 fetchData();
 </script>
 </body>
