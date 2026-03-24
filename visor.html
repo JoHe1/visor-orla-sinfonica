@@ -6,7 +6,7 @@
 <title>Visor de Orla · Sala Sinfónica</title>
 <link rel="stylesheet" href="style/orla.css">
 <style>
-  /* Ajustes extra para el visor público (Cursor normal en butacas) */
+  /* Quitar el cursor de la manita en los asientos para indicar que no se pueden clicar */
   .seat { cursor: default !important; }
 </style>
 </head>
@@ -20,7 +20,7 @@
     </div>
     <div class="meta-bar">
       <span id="total-info">Cargando...</span>
-      <span class="save-dot ok" title="Sincronizado con el servidor" style="background:#16a34a; opacity:1;"></span>
+      <span class="save-dot ok" title="Conectado" style="background:#16a34a; opacity:1;"></span>
     </div>
     
     <div class="search-bar">
@@ -53,18 +53,17 @@
 const COLORS = [
   '#FFB7B2', '#FFDAC1', '#E2F0CB', '#B5EAD7', '#C7CEEA'
 ];
-// ⚠️ Usamos la misma ruta exacta que el index.html para garantizar que coge los mismos datos
-const API = 'http://localhost:8000/api/data';
 
 let state = { students: [], reservations: {} };
-let selStu = null; // Alumno seleccionado para iluminar butacas
+let selStu = null; 
 
 /* ════════════════════════════════════════════════════════════
-   CARGA DE DATOS DESDE EL SERVIDOR (Ignorando caché)
+   CARGA DE DATOS (Lee directamente el archivo local orla_data.json)
 ════════════════════════════════════════════════════════════ */
 async function fetchData() {
   try {
-    const r = await fetch(API, { cache: 'no-store', signal: AbortSignal.timeout(2000) });
+    // ⚠️ CORRECCIÓN CLAVE: Lee el archivo directamente, sin usar localhost
+    const r = await fetch('orla_data.json', { cache: 'no-store' });
     if (r.ok) { 
       const d = await r.json(); 
       if (d && d.students && d.students.length > 0) { 
@@ -73,7 +72,7 @@ async function fetchData() {
       }
     }
   } catch (err) {
-    console.error("Error conectando con el servidor:", err);
+    console.error("Error cargando orla_data.json:", err);
   }
   render();
 }
@@ -210,7 +209,6 @@ function makeSeat(s, rowDef) {
       sEl.classList.add('taken'); 
       sEl.style.backgroundColor = stu.color; 
       
-      // Iluminación si el usuario ha sido buscado/seleccionado
       if (selStu && selStu.id === stu.id) {
           sEl.classList.add('highlighted-seat');
       }
@@ -242,9 +240,6 @@ function makeSeat(s, rowDef) {
   
   sEl.addEventListener('mouseenter', ev => showTip(ev, key, rowDef, s));
   sEl.addEventListener('mouseleave', hideTip);
-  
-  // ⚠️ ELIMINADOS LOS EVENTOS DE CLICK Y CLICK DERECHO (MODO VISOR)
-  
   return sEl;
 }
 
@@ -289,7 +284,7 @@ function createStudentCard(stu) {
   const pills = keys.map(k => {
     const p = k.split('|');
     const z = p[0] === 'platea' ? 'P' : p[0] === 'anf1' ? 'A1' : p[0] === 'galeria' ? 'G' : 'A2';
-    // ⚠️ Eliminado el evento onclick="freeSeat(...)" de las pastillas
+    // ⚠️ Sin evento onclick para que no puedan liberar el asiento
     return `<span class="seat-pill" style="background:${stu.color}; cursor:default;">${z} F${p[1]}·${p[2]}</span>`;
   }).join('');
 
@@ -301,7 +296,7 @@ function createStudentCard(stu) {
       <div class="student-dot" style="background:${stu.color}"></div>
       <span class="student-name" title="${stu.name}">${badge}${stu.name}</span>
       <span class="student-count">${used}/${stu.seats}</span>
-      </div>
+    </div>
     <div class="stu-bar">
       <div class="stu-bar-fill" style="width:${pct}%;background:${stu.color}"></div>
     </div>
@@ -312,7 +307,7 @@ function createStudentCard(stu) {
   card.addEventListener('click', () => { 
     selStu = (selStu && selStu.id === stu.id) ? null : stu; 
     renderSidebar(); 
-    renderHall(); // Actualizar iluminación en el plano
+    renderHall(); // Actualizar iluminación
   });
   return card;
 }
@@ -342,7 +337,6 @@ function showTip(e, key, rowDef, s) {
           else html += `<br><span style="color:#94a3b8;font-size:10px">Asiento de Invitado</span>`;
       }
     }
-    // ⚠️ Eliminado el mensaje de "Clic para liberar"
   } else {
     html += '<br><small style="color:#999">Butaca Libre</small>';
   }
@@ -372,7 +366,7 @@ let isDown = false; let startX, startY, scrollLeft, scrollTop;
 dragHall.style.cursor = 'grab';
 
 dragHall.addEventListener('mousedown', (e) => {
-  if (e.target.closest('.seat') || e.target.closest('.btn')) return;
+  if (e.target.closest('.seat')) return;
   isDown = true; dragHall.style.cursor = 'grabbing';
   startX = e.pageX - dragHall.offsetLeft; startY = e.pageY - dragHall.offsetTop;
   scrollLeft = dragHall.scrollLeft; scrollTop = dragHall.scrollTop;
@@ -385,7 +379,6 @@ dragHall.addEventListener('mousemove', (e) => {
   dragHall.scrollLeft = scrollLeft - (x - startX); dragHall.scrollTop = scrollTop - (y - startY);
 });
 
-// Arrancar visor
 fetchData();
 </script>
 </body>
