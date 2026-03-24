@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visor de Orla · Sala Sinfónica</title>
+<link rel="stylesheet" href="style/orla.css">
+<style>
+  /* Sobrescribimos la cuadrícula para que ocupe toda la pantalla sin el Sidebar */
+  .app { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .seat { cursor: default; } /* Quitamos el cursor de la manita en los asientos */
+  .seat:hover { transform: scale(1.35); border-color: #555; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <div class="main">
+    <div class="toolbar">
+      <h1>Sala Sinfónica · Plano de Asientos Oficial</h1>
+      <div class="legend">
+        <div class="legend-dot" style="background:var(--surface2)"></div>Libre
+      </div>
+      <div class="legend">
+        <div class="legend-dot" style="background:#888;border-color:transparent"></div>Reservado
+      </div>
+    </div>
+    
+    <div id="hall-viewport">
+        <div id="hall-content-wrapper">
+            <div class="hall" id="hall"></div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="tip"></div>
+
+<script src="layout.js"></script>
+
+<script>
+let state = { students: [], reservations: {} };
+
+/* Carga el JSON estático directamente */
+async function fetchData() {
+  try {
+    // Busca el archivo json en la misma carpeta
+    const r = await fetch('orla_data.json');
+    if (r.ok) {
+      state = await r.json();
+    }
+  } catch (err) {
+    console.error("Error al cargar los datos", err);
+  }
+  renderHall();
+}
+
+function renderHall() {
+  const hall = document.getElementById('hall');
+  hall.innerHTML = '';
+  const inner = el('div', 'hall-inner');
+
+  const anf2Rows   = LAYOUT.filter(r => r.zone === 'anf2').sort((a,b) => b.row - a.row);
+  const anf1Rows   = LAYOUT.filter(r => r.zone === 'anf1').sort((a,b) => b.row - a.row);
+  const plateaRows = LAYOUT.filter(r => r.zone === 'platea');
+
+  // ── SUPERIOR (Galerías + Anfiteatros) ──
+  const topSection = el('div', 'top-section');
+
+  const colPar = el('div', 'galeria-col gal-par-col');
+  const lblPar = el('div', 'gal-lbl'); lblPar.textContent = 'GALERÍA PAR'; colPar.appendChild(lblPar);
+  GALERIA_PAR.forEach(s => colPar.appendChild(makeSeat(s, { zone: 'galeria', row: 1 })));
+  topSection.appendChild(colPar);
+
+  const anfCenter = el('div', 'anf-center');
+  anfCenter.appendChild(makeZoneHeader('Anfiteatro 2°'));
+  anf2Rows.forEach(row => anfCenter.appendChild(makeSplitRow(row, false)));
+  const anf2Labels = el('div', 'section-labels');
+  anf2Labels.innerHTML = `<span class="sec-lbl sec-lat">Lateral Par</span><span class="sec-lbl sec-cen">Central Par</span><span class="sec-lbl sec-cen">Central Impar</span><span class="sec-lbl sec-lat">Lateral Impar</span>`;
+  anfCenter.appendChild(anf2Labels);
+
+  anfCenter.appendChild(makeZoneHeader('Anfiteatro 1°'));
+  anf1Rows.forEach(row => anfCenter.appendChild(makeSplitRow(row, true)));
+  const anf1Labels = el('div', 'section-labels');
+  anf1Labels.innerHTML = `<span class="sec-lbl sec-lat">Lat. Par Ext.</span><span class="sec-lbl sec-lat">Lat. Par Int.</span><span class="sec-lbl sec-cen">Cen. Par</span><span class="sec-lbl sec-cen">Cen. Impar</span><span class="sec-lbl sec-lat">Lat. Impar Int.</span><span class="sec-lbl sec-lat">Lat. Impar Ext.</span>`;
+  anfCenter.appendChild(anf1Labels);
+
+  topSection.appendChild(anfCenter);
+
+  const colImp = el('div', 'galeria-col gal-imp-col');
+  const lblImp = el('div', 'gal-lbl'); lblImp.textContent = 'GALERÍA IMPAR'; colImp.appendChild(lblImp);
+  GALERIA_IMP.forEach(s => colImp.appendChild(makeSeat(s, { zone: 'galeria', row: 1 })));
+  topSection.appendChild(colImp);
+
+  inner.appendChild(topSection);
+
+  // ── PLATEA ──
+  inner.appendChild(makeZoneHeader('Platea'));
+  plateaRows.forEach(row => inner.appendChild(makeFullRow(row)));
+  const plateaLabels = el('div', 'section-labels');
+  plateaLabels.innerHTML = `<span class="sec-lbl sec-lat">Lateral Par</span><span class="sec-lbl sec-cen">Central Par</span><span class="sec-lbl sec-cen">Central Impar</span><span class="sec-lbl sec-lat">Lateral Impar</span>`;
+  inner.appendChild(plateaLabels);
+
+  const st = el('div', 'stage-block');
+  st.textContent = 'E S C E N A R I O';
+  inner.appendChild(st);
+
+  hall.appendChild(inner);
+}
+
+function makeZoneHeader(text) { const h = el('div', 'zone-header'); h.textContent = text; return h; }
+
+function makeSplitRow(rowDef, showPalcoGap = false) {
+  const wrapper = el('div', 'seat-row split-row');
+  const parSeats = rowDef.seats.filter(s => s.aisle || s.s === 'P');
+  const impSeats = rowDef.seats.filter(s => s.aisle || s.s === 'I');
+
+  const trimAisles = arr => {
+    let s = 0, e = arr.length - 1;
+    while (s < arr.length && arr[s].aisle) s++;
+    while (e >= 0 && arr[e].aisle) e--;
+    return arr.slice(s, e + 1);
+  };
+
+  const parTrimmed = trimAisles(parSeats);
+  const impTrimmed = trimAisles(impSeats);
+
+  const hasCen = rowDef.seats.some(s => s.section === 'cen-par');
+  const rnClass = (rowDef.zone === 'anf2' && !hasCen) ? 'row-num row-num-light' : 'row-num';
+  const rlClass = (rowDef.zone === 'anf2' && !hasCen) ? 'row-lbl row-lbl-light' : 'row-lbl';
+  const rn = el('div', rnClass); rn.textContent = rowDef.row; wrapper.appendChild(rn);
+
+  const parSide = el('div', 'split-side split-par');
+  parTrimmed.forEach(s => {
+    if (s.aisle) { 
+      const aisleEl = el('div', s.label ? 'aisle aisle-label' : 'aisle');
+      if (s.label) aisleEl.textContent = s.label;
+      parSide.appendChild(aisleEl); return; 
+    }
+    parSide.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef));
+  });
+  wrapper.appendChild(parSide);
+
+  const gap = el('div', showPalcoGap && rowDef.row === 8 ? 'split-gap split-gap-palco' : 'split-gap');
+  if (showPalcoGap && rowDef.row === 8) gap.textContent = 'Palco Autoridades';
+  wrapper.appendChild(gap);
+
+  const impSide = el('div', 'split-side split-imp');
+  impTrimmed.forEach(s => {
+    if (s.aisle) { 
+      const aisleEl = el('div', s.label ? 'aisle aisle-label' : 'aisle');
+      if (s.label) aisleEl.textContent = s.label;
+      impSide.appendChild(aisleEl); return; 
+    }
+    impSide.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef));
+  });
+  wrapper.appendChild(impSide);
+
+  const rl = el('div', rlClass); rl.textContent = rowDef.row; wrapper.appendChild(rl);
+  return wrapper;
+}
+
+function makeFullRow(rowDef) {
+  const rowEl = el('div', 'seat-row');
+  const rn = el('div', 'row-num'); rn.textContent = rowDef.row; rowEl.appendChild(rn);
+  let aisleCount = 0;
+  rowDef.seats.forEach(s => {
+    if (s.aisle) {
+      aisleCount++;
+      const hasLatPar = rowDef.seats.some(s => s.section === 'lat-par');
+      const hasLatImp = rowDef.seats.some(s => s.section === 'lat-imp');
+      const isLabel = (aisleCount === 1 && hasLatPar) || (aisleCount === 3 && hasLatImp);
+      const aisleEl = el('div', isLabel ? 'aisle aisle-label' : 'aisle');
+      if (isLabel) aisleEl.textContent = rowDef.row;
+      rowEl.appendChild(aisleEl); return;
+    }
+    rowEl.appendChild(makeSeat(s, rowDef));
+  });
+  const rl = el('div', 'row-lbl'); rl.textContent = rowDef.row; rowEl.appendChild(rl);
+  return rowEl;
+}
+
+function makeSeat(s, rowDef) {
+  const key = seatKey(rowDef.zone, rowDef.row, s.n, s.s);
+  const sEl = el('div', 'seat');
+  
+  if (s.n >= 9000 || s.pmr) { sEl.classList.add('seat-pmr'); }
+
+  const sid = state.reservations[key];
+  if (sid) {
+    const stu = getStu(sid);
+    if (stu) { sEl.classList.add('taken'); sEl.style.background = stu.color; }
+  }
+  
+  sEl.addEventListener('mouseenter', ev => showTip(ev, key, rowDef, s));
+  sEl.addEventListener('mouseleave', hideTip);
+  // ⚠️ ELIMINADO EL EVENTO CLIC (Es solo visor)
+  
+  return sEl;
+}
+
+function showTip(e, key, rowDef, s) {
+  const tip = document.getElementById('tip');
+  const z   = rowDef.zone === 'platea' ? 'Platea'
+             : rowDef.zone === 'anf1'  ? 'Anfiteatro 1°'
+             : rowDef.zone === 'anf2'  ? 'Anfiteatro 2°' : 'Galería';
+             
+  const secLabel = s.section === 'lat-par'     ? 'Lateral Par'
+                 : s.section === 'lat-par-int' ? 'Lateral Par (int.)'
+                 : s.section === 'lat-par-ext' ? 'Lateral Par (ext.)'
+                 : s.section === 'cen-par'     ? 'Central Par'
+                 : s.section === 'cen-imp'     ? 'Central Impar'
+                 : s.section === 'lat-imp'     ? 'Lateral Impar'
+                 : s.section === 'lat-imp-int' ? 'Lateral Impar (int.)'
+                 : s.section === 'lat-imp-ext' ? 'Lateral Impar (ext.)'
+                 : s.section === 'gal-par'     ? 'Galería Par'
+                 : s.section === 'gal-imp'     ? 'Galería Impar' : '';
+                 
+  const sid = state.reservations[key];
+  
+  let html  = `<strong>${z}${rowDef.row ? ' · Fila ' + rowDef.row : ''} · Butaca ${s.n}</strong>`;
+  if (secLabel) html += ` <small style="color:#999">${secLabel}</small>`;
+  
+  if (sid) {
+    const stu = getStu(sid);
+    if (stu) html += `<br><span style="color:${stu.color}">●</span> ${stu.name}`;
+    // ⚠️ ELIMINADO EL TEXTO "Clic para liberar"
+  } else {
+    html += '<br><small style="color:#999">Butaca Libre</small>';
+  }
+  
+  tip.innerHTML = html; tip.style.display = 'block'; moveTip(e);
+}
+
+function moveTip(e) {
+  const t = document.getElementById('tip');
+  let x = e.clientX + 14; let y = e.clientY - 8;
+  t.style.left = x + 'px'; t.style.top  = y + 'px';
+  const rect = t.getBoundingClientRect();
+  if (rect.right > window.innerWidth) x = e.clientX - rect.width - 14;
+  if (rect.bottom > window.innerHeight) y = e.clientY - rect.height - 8;
+  t.style.left = x + 'px'; t.style.top  = y + 'px';
+}
+function hideTip() { document.getElementById('tip').style.display = 'none'; }
+document.addEventListener('mousemove', e => {
+  const t = document.getElementById('tip');
+  if (t.style.display !== 'none') moveTip(e);
+});
+
+function el(tag, cls) { const e = document.createElement(tag); if (cls) e.className = cls; return e; }
+function getStu(id) { return state.students.find(s => s.id === id); }
+
+// ── Panning Logic ──
+const dragHall = document.getElementById('hall-viewport');
+const contentWrapper = document.getElementById('hall-content-wrapper');
+let isDown = false; let startX, startY; let translateX = 0, translateY = 0;
+
+dragHall.addEventListener('mousedown', (e) => {
+  if (e.target.closest('.seat')) return;
+  isDown = true; dragHall.classList.add('grabbing');
+  startX = e.clientX - translateX; startY = e.clientY - translateY;
+});
+window.addEventListener('mouseup', () => { isDown = false; dragHall.classList.remove('grabbing'); });
+window.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  translateX = e.clientX - startX; translateY = e.clientY - startY;
+  contentWrapper.style.transform = `translate(${translateX}px, ${translateY}px)`;
+});
+
+fetchData();
+</script>
+</body>
+</html>
