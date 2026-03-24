@@ -1,0 +1,12 @@
+# Ignorar el panel de administración
+index.html
+
+# Ignorar el servidor local
+server.py
+
+# Ignorar los datos privados originales (opcional, pero recomendado)
+data/
+
+# Ignorar archivos basura del sistema
+.DS_Store
+__pycache__/
