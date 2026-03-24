@@ -11,6 +11,15 @@
   .sidebar { display: none; }
   .seat { cursor: default; } /* Quitamos el cursor de la manita en los asientos */
   .seat:hover { transform: scale(1.35); border-color: #555; }
+
+  /* Ocultamos las barras de scroll pero mantenemos los topes nativos */
+  .hall {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE y Edge */
+  }
+  .hall::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Opera */
+  }
 </style>
 </head>
 <body>
@@ -27,11 +36,7 @@
       </div>
     </div>
     
-    <div id="hall-viewport">
-        <div id="hall-content-wrapper">
-            <div class="hall" id="hall"></div>
-        </div>
-    </div>
+    <div class="hall" id="hall"></div>
   </div>
 
 </div>
@@ -252,21 +257,37 @@ document.addEventListener('mousemove', e => {
 function el(tag, cls) { const e = document.createElement(tag); if (cls) e.className = cls; return e; }
 function getStu(id) { return state.students.find(s => s.id === id); }
 
-// ── Panning Logic ──
-const dragHall = document.getElementById('hall-viewport');
-const contentWrapper = document.getElementById('hall-content-wrapper');
-let isDown = false; let startX, startY; let translateX = 0, translateY = 0;
+// ── Panning Logic (Con límites nativos) ──
+const dragHall = document.getElementById('hall');
+let isDown = false;
+let startX, startY, scrollLeft, scrollTop;
 
 dragHall.addEventListener('mousedown', (e) => {
   if (e.target.closest('.seat')) return;
-  isDown = true; dragHall.classList.add('grabbing');
-  startX = e.clientX - translateX; startY = e.clientY - translateY;
+  isDown = true;
+  dragHall.style.cursor = 'grabbing';
+  startX = e.pageX - dragHall.offsetLeft;
+  startY = e.pageY - dragHall.offsetTop;
+  scrollLeft = dragHall.scrollLeft;
+  scrollTop = dragHall.scrollTop;
 });
-window.addEventListener('mouseup', () => { isDown = false; dragHall.classList.remove('grabbing'); });
-window.addEventListener('mousemove', (e) => {
+
+dragHall.addEventListener('mouseleave', () => { 
+  isDown = false; 
+  dragHall.style.cursor = 'grab'; 
+});
+window.addEventListener('mouseup', () => { 
+  isDown = false; 
+  dragHall.style.cursor = 'grab'; 
+});
+
+dragHall.addEventListener('mousemove', (e) => {
   if (!isDown) return;
-  translateX = e.clientX - startX; translateY = e.clientY - startY;
-  contentWrapper.style.transform = `translate(${translateX}px, ${translateY}px)`;
+  e.preventDefault();
+  const x = e.pageX - dragHall.offsetLeft;
+  const y = e.pageY - dragHall.offsetTop;
+  dragHall.scrollLeft = scrollLeft - (x - startX);
+  dragHall.scrollTop = scrollTop - (y - startY);
 });
 
 fetchData();
