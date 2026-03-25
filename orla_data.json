@@ -5,189 +5,216 @@
       "name": "Jorge Lorenzo Lorenzo",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|3|10|P"
     },
     {
       "id": 2,
       "name": "Kimberly Casimiro Torres",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|2|2|P"
     },
     {
       "id": 3,
       "name": "Elisa-Marie Breeze Rebstock",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|18|P"
     },
     {
       "id": 4,
       "name": "Claudia Álvarez González",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|1|10|P"
     },
     {
       "id": 5,
       "name": "Nestor Ortega Perez",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|22|P"
     },
     {
       "id": 6,
       "name": "Alberto Rivero Monzón",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|4|24|P"
     },
     {
       "id": 7,
       "name": "Laura Aguiar Pérez",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|4|P"
     },
     {
       "id": 8,
       "name": "Samuel Déniz Santana",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|2|8|P"
     },
     {
       "id": 9,
       "name": "Karel Carracedo Santana",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|1|20|P"
     },
     {
       "id": 10,
       "name": "Jose Mataix Perez",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|14|P"
     },
     {
       "id": 11,
       "name": "Alejandro Alemán Alemán",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|6|P"
     },
     {
       "id": 12,
       "name": "Amai Suárez Navarro",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|4|18|P"
     },
     {
       "id": 13,
       "name": "Álvaro Rodríguez González",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|4|22|P"
     },
     {
       "id": 14,
       "name": "María Navarro Cruz",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|3|18|P"
     },
     {
       "id": 15,
       "name": "Carlos Francisco Suárez Sauca",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|4|14|P"
     },
     {
       "id": 16,
       "name": "Gisela Isabel Belmonte Cruz",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|12|P"
     },
     {
       "id": 17,
       "name": "Juan López de Hierro de la Fuente",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|3|6|P"
     },
     {
       "id": 18,
       "name": "Gabriel Felipe Bernal Pinto",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|14|P"
     },
     {
       "id": 19,
       "name": "Luna Yue Hernández Guerra",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|2|20|P"
     },
     {
       "id": 20,
       "name": "Diego Marrero Ferrera",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|12|P"
     },
     {
       "id": 21,
       "name": "Lucía Afonso Medina",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|2|P"
     },
     {
       "id": 22,
       "name": "Farid Sánchez Belmadi",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|4|20|P"
     },
     {
       "id": 23,
       "name": "David García Vera",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|2|10|P"
     },
     {
       "id": 24,
       "name": "Diego Jesús Torrejón Cabrera",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|4|8|P"
     },
     {
       "id": 25,
       "name": "Nicolás Trujillo Estévez",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|4|6|P"
     },
     {
       "id": 26,
       "name": "Daniel Talavera Hernández",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|4|12|P"
     },
     {
       "id": 27,
       "name": "Sergio Muela Santos",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|3|16|P"
     },
     {
       "id": 28,
@@ -195,105 +222,119 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|2|18|P"
     },
     {
       "id": 29,
       "name": "Alejandro Lorenzo Del Toro Acosta",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|2|6|P"
     },
     {
       "id": 30,
       "name": "Daniel López Correas",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|4|P"
     },
     {
       "id": 31,
       "name": "Owen Urdaneta Morales",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|4|4|P"
     },
     {
       "id": 32,
       "name": "Victor Blanco Davila",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|16|P"
     },
     {
       "id": 33,
       "name": "Rafael Suárez Saavedra",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|4|16|P"
     },
     {
       "id": 34,
       "name": "Javier González Benítez",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|2|14|P"
     },
     {
       "id": 35,
       "name": "Víctor López Hernández",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|8|P"
     },
     {
       "id": 36,
       "name": "Jorge González Benítez",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|2|16|P"
     },
     {
       "id": 37,
       "name": "María Alonso León",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|8|P"
     },
     {
       "id": 38,
       "name": "Víctor Gil Bernal",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|2|12|P"
     },
     {
       "id": 39,
       "name": "Darío José Iglesias San José",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|3|2|P"
     },
     {
       "id": 40,
       "name": "Lucía Hernández Nieves",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|2|22|P"
     },
     {
       "id": 41,
       "name": "José Luis Perdomo de Vega",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|3|24|P"
     },
     {
       "id": 42,
       "name": "Jorge Cubero Toribio",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|2|4|P"
     },
     {
       "id": 43,
@@ -301,301 +342,343 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|3|20|P"
     },
     {
       "id": 44,
       "name": "Manuel Alejandro Torrealba Torrealba",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|4|10|P"
     },
     {
       "id": 45,
       "name": "Luis Perera Pérez",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|4|26|P"
     },
     {
       "id": 46,
       "name": "Javier Castilla Moreno",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|2|7|I"
     },
     {
       "id": 47,
       "name": "Náyade García Torres",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|4|17|I"
     },
     {
       "id": 48,
       "name": "Wafa Azdad Triki",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|3|I"
     },
     {
       "id": 49,
       "name": "Saúl Expósito Morales",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|3|9|I"
     },
     {
       "id": 50,
       "name": "Juan Francisco Del Rosario Machin",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|21|I"
     },
     {
       "id": 51,
       "name": "Leslie Liu Romero Martín",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|5|20|P"
     },
     {
       "id": 52,
       "name": "Francisco Malillos Castellano",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|5|27|I"
     },
     {
       "id": 53,
       "name": "Carlos Mireles Rodríguez",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|5|15|I"
     },
     {
       "id": 54,
       "name": "Jesús Santacruz Martín-Delgado",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|6|29|I"
     },
     {
       "id": 55,
       "name": "Alejandro van Baumberghen Quintana",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|6|5|I"
     },
     {
       "id": 56,
       "name": "Silvia González Torres",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|4|13|I"
     },
     {
       "id": 57,
       "name": "Alejandro Armas Trujillo",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|11|I"
     },
     {
       "id": 58,
       "name": "Sergio Acosta Quintana",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|19|I"
     },
     {
       "id": 59,
       "name": "Raúl Trejo González",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|6|9|I"
     },
     {
       "id": 60,
       "name": "Raúl Núñez Torres",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|5|9|I"
     },
     {
       "id": 61,
       "name": "Eduardo Arbelo Rua-Figueroa",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|13|I"
     },
     {
       "id": 62,
       "name": "Gabriel Domínguez Torres",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|3|13|I"
     },
     {
       "id": 63,
       "name": "Eduardo Gainza Koller",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|4|23|I"
     },
     {
       "id": 64,
       "name": "María Cabrera Vérgez",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|2|15|I"
     },
     {
       "id": 65,
       "name": "Augusto Ernesto Paolone Silva",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|5|2|P"
     },
     {
       "id": 66,
       "name": "Pablo Medina Quintana",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|5|19|I"
     },
     {
       "id": 67,
       "name": "Carlos Alonso Rodríguez",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|15|I"
     },
     {
       "id": 68,
       "name": "Dylan Alexander Castrillón Suárez",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|2|5|I"
     },
     {
       "id": 69,
       "name": "Kevin José Falcón Armas",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|3|3|I"
     },
     {
       "id": 70,
       "name": "Asmae Ez zaim Driouch",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|5|I"
     },
     {
       "id": 71,
       "name": "Rosmary Garcia Pedroza",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|4|19|I"
     },
     {
       "id": 72,
       "name": "Carlos Serradilla Rodriguez",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|6|19|I"
     },
     {
       "id": 73,
       "name": "Alejandro de Olózaga Ramírez",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|3|23|I"
     },
     {
       "id": 74,
       "name": "Elena Artiles Morales",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|1|9|I"
     },
     {
       "id": 75,
       "name": "Jesús Extraviz Suárez",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|7|I"
     },
     {
       "id": 76,
       "name": "Ayman Asbai Ghoudan",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|7|I"
     },
     {
       "id": 77,
       "name": "Joel Santana Alemán",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|6|27|I"
     },
     {
       "id": 78,
       "name": "Mario Pérez Carmona",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|5|4|P"
     },
     {
       "id": 79,
       "name": "Alberto Redondo Álvarez de Sotomayor",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|5|8|P"
     },
     {
       "id": 80,
       "name": "Jesús Alberto Ortega Hernández",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|5|5|I"
     },
     {
       "id": 81,
       "name": "Paola Viera Suárez",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|6|3|I"
     },
     {
       "id": 82,
       "name": "David Suárez Martel",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|6|17|I"
     },
     {
       "id": 83,
       "name": "Juan Boissier García",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|2|17|I"
     },
     {
       "id": 84,
       "name": "Andrea Santana lópez",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|6|23|I"
     },
     {
       "id": 85,
       "name": "Miguel Ángel Rodríguez Ruano",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|5|18|P"
     },
     {
       "id": 86,
@@ -603,210 +686,239 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|5|16|P"
     },
     {
       "id": 87,
       "name": "Carlos Ruano Ramos",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|5|24|P"
     },
     {
       "id": 88,
       "name": "Mario García Abellán",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|4|21|I"
     },
     {
       "id": 89,
       "name": "Roberto Tejero Martín",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|6|13|I"
     },
     {
       "id": 90,
       "name": "Laura Herrera Negrin",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|4|3|I"
     },
     {
       "id": 91,
       "name": "Gorka Eymard Santana Cabrera",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|6|25|I"
     },
     {
       "id": 92,
       "name": "José Manuel Díaz Hernández",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|3|17|I"
     },
     {
       "id": 93,
       "name": "Aythami Pérez Vega",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|5|6|P"
     },
     {
       "id": 94,
       "name": "Daniel Gutierrez Recio",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|4|9|I"
     },
     {
       "id": 95,
       "name": "Jaime Calzada Sánchez",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|2|11|I"
     },
     {
       "id": 96,
       "name": "Raúl Marrero Marichal",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|5|23|I"
     },
     {
       "id": 97,
       "name": "Eduardo Marrero Gonzalez",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|5|25|I"
     },
     {
       "id": 98,
       "name": "Alejandro Guerra Jiménez",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|4|11|I"
     },
     {
       "id": 99,
       "name": "Alejandro Santana Morera",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|6|21|I"
     },
     {
       "id": 100,
       "name": "Jorge Salvador Martel Negrín",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|5|21|I"
     },
     {
       "id": 101,
       "name": "Mohamed Elouariachi Lamhamdi",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|3|11|I"
     },
     {
       "id": 102,
       "name": "Miguel Castellano Hernández",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|2|9|I"
     },
     {
       "id": 103,
       "name": "Wei Li",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|4|1|I"
     },
     {
       "id": 104,
       "name": "Anthony Diego Avila Arias",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|1|5|I"
     },
     {
       "id": 105,
       "name": "Juan Carlos Rodríguez Ramírez",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|5|14|P"
     },
     {
       "id": 106,
       "name": "Javier Sánchez Godoy",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|5|26|P"
     },
     {
       "id": 107,
       "name": "Pablo López Monzón",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|4|2|P"
     },
     {
       "id": 108,
       "name": "Nicolás Rey Alonso",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|5|10|P"
     },
     {
       "id": 109,
       "name": "Nicolás Hernández Castro",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|4|7|I"
     },
     {
       "id": 110,
       "name": "Héctor Barbosa Artiles",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|1|1|I"
     },
     {
       "id": 111,
       "name": "Zuleima Hernández Hernández",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|4|5|I"
     },
     {
       "id": 112,
       "name": "Carlos Mathias Osorio Rojas",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|5|3|I"
     },
     {
       "id": 113,
       "name": "Mohamed Oulad Haroun Zarkik",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|5|1|I"
     },
     {
       "id": 114,
       "name": "Néstor Déniz González",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|3|19|I"
     },
     {
       "id": 115,
       "name": "Esteban Trujillo Santana",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|6|7|I"
     },
     {
       "id": 116,
@@ -814,7 +926,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|5|22|P"
     },
     {
       "id": 117,
@@ -822,133 +934,151 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|5|7|I"
     },
     {
       "id": 118,
       "name": "Alfredo Villarroya Roldós",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|6|1|I"
     },
     {
       "id": 119,
       "name": "Gabriel Godoy Navarro",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|4|15|I"
     },
     {
       "id": 120,
       "name": "Carlos Álamo Peña",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|1|17|I"
     },
     {
       "id": 121,
       "name": "Saúl Antonio Cruz Pérez",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|2|1|I"
     },
     {
       "id": 122,
       "name": "Meng Fei Dai",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|4|25|I"
     },
     {
       "id": 123,
       "name": "David Miranda Campos",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|5|17|I"
     },
     {
       "id": 124,
       "name": "Dunia Suárez Rodríguez",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|6|15|I"
     },
     {
       "id": 125,
       "name": "Nahuel Cosme Díaz Vera",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|15|I"
     },
     {
       "id": 126,
       "name": "Pedro Batista Sosa",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|2|21|I"
     },
     {
       "id": 127,
       "name": "Wail Ben el Hassane Boudhar",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|2|19|I"
     },
     {
       "id": 128,
       "name": "Lucía Motas Guedes",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|5|13|I"
     },
     {
       "id": 129,
       "name": "Jerónimo Omar Falcón Dávila",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|3|1|I"
     },
     {
       "id": 130,
       "name": "Oliver Juan Cabrera Volo",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|2|13|I"
     },
     {
       "id": 131,
       "name": "Luis Muñoz Sanz",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|5|11|I"
     },
     {
       "id": 132,
       "name": "Eva Yuan Robaina Navarro",
       "seats": 11,
       "type": "graduate",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|5|12|P"
     },
     {
       "id": 133,
       "name": "Santiago Concepción Estévez",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|2|3|I"
     },
     {
       "id": 134,
       "name": "Raúl Sánchez Santamaría",
       "seats": 11,
       "type": "graduate",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|5|28|P"
     },
     {
       "id": 135,
       "name": "Miguel Darío Tovar Navarro",
       "seats": 11,
       "type": "graduate",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|6|11|I"
     },
     {
       "id": 136,
@@ -980,7 +1110,7 @@
       "seats": 1,
       "type": "teacher",
       "color": "#B5EAD7",
-      "primarySeat": "platea|4|42|P"
+      "primarySeat": "platea|3|32|P"
     },
     {
       "id": 140,
@@ -1207,21 +1337,12 @@
       "primarySeat": "platea|4|32|P"
     },
     {
-      "id": 168,
-      "name": "Ángel Quintana Gómez",
-      "seats": 1,
-      "type": "teacher",
-      "isManual": false,
-      "color": "#E2F0CB",
-      "primarySeat": "platea|3|32|P"
-    },
-    {
       "id": 169,
       "name": "Modesto Fernando Castrillón Santana",
       "seats": 1,
       "type": "teacher",
       "isManual": false,
-      "color": "#B5EAD7",
+      "color": "#E2F0CB",
       "primarySeat": "platea|1|30|P"
     }
   ],
@@ -1249,17 +1370,151 @@
     "platea|4|36|P": 160,
     "platea|4|38|P": 154,
     "platea|4|40|P": 153,
-    "platea|3|32|P": 168,
     "platea|1|24|P": 137,
     "platea|1|22|P": 150,
-    "platea|1|30|P": 169,
     "platea|1|32|P": 156,
     "platea|1|26|P": 136,
-    "platea|1|28|P": 152,
     "platea|1|34|P": 142,
     "platea|1|36|P": 143,
     "platea|1|38|P": 140,
-    "platea|4|42|P": 139
+    "platea|3|32|P": 139,
+    "platea|1|20|P": 9,
+    "platea|1|18|P": 3,
+    "platea|1|16|P": 32,
+    "platea|1|14|P": 18,
+    "platea|1|12|P": 16,
+    "platea|1|10|P": 4,
+    "platea|1|8|P": 37,
+    "platea|1|6|P": 11,
+    "platea|1|4|P": 7,
+    "platea|1|2|P": 21,
+    "platea|1|19|I": 58,
+    "platea|1|17|I": 120,
+    "platea|1|15|I": 67,
+    "platea|1|13|I": 61,
+    "platea|1|11|I": 57,
+    "platea|1|9|I": 74,
+    "platea|1|7|I": 76,
+    "platea|1|5|I": 104,
+    "platea|1|3|I": 48,
+    "platea|1|1|I": 110,
+    "platea|2|22|P": 40,
+    "platea|2|20|P": 19,
+    "platea|2|18|P": 28,
+    "platea|2|16|P": 36,
+    "platea|2|14|P": 34,
+    "platea|2|12|P": 38,
+    "platea|2|10|P": 23,
+    "platea|2|8|P": 8,
+    "platea|2|6|P": 29,
+    "platea|2|4|P": 42,
+    "platea|2|2|P": 2,
+    "platea|2|21|I": 126,
+    "platea|2|19|I": 127,
+    "platea|2|17|I": 83,
+    "platea|2|15|I": 64,
+    "platea|2|13|I": 130,
+    "platea|2|11|I": 95,
+    "platea|2|9|I": 102,
+    "platea|2|7|I": 46,
+    "platea|2|5|I": 68,
+    "platea|2|3|I": 133,
+    "platea|2|1|I": 121,
+    "platea|3|24|P": 41,
+    "platea|3|22|P": 5,
+    "platea|3|20|P": 43,
+    "platea|3|18|P": 14,
+    "platea|3|16|P": 27,
+    "platea|3|14|P": 10,
+    "platea|3|12|P": 20,
+    "platea|3|10|P": 1,
+    "platea|3|8|P": 35,
+    "platea|3|6|P": 17,
+    "platea|3|4|P": 30,
+    "platea|3|2|P": 39,
+    "platea|3|23|I": 73,
+    "platea|3|21|I": 50,
+    "platea|3|19|I": 114,
+    "platea|3|17|I": 92,
+    "platea|3|15|I": 125,
+    "platea|3|13|I": 62,
+    "platea|3|11|I": 101,
+    "platea|3|9|I": 49,
+    "platea|3|7|I": 75,
+    "platea|3|5|I": 70,
+    "platea|3|3|I": 69,
+    "platea|3|1|I": 129,
+    "platea|4|24|P": 6,
+    "platea|4|26|P": 45,
+    "platea|4|22|P": 13,
+    "platea|4|20|P": 22,
+    "platea|4|18|P": 12,
+    "platea|4|16|P": 33,
+    "platea|4|14|P": 15,
+    "platea|4|12|P": 26,
+    "platea|4|10|P": 44,
+    "platea|4|8|P": 24,
+    "platea|4|6|P": 25,
+    "platea|4|4|P": 31,
+    "platea|4|2|P": 107,
+    "platea|4|25|I": 122,
+    "platea|4|23|I": 63,
+    "platea|4|21|I": 88,
+    "platea|4|19|I": 71,
+    "platea|4|17|I": 47,
+    "platea|4|15|I": 119,
+    "platea|4|13|I": 56,
+    "platea|4|11|I": 98,
+    "platea|4|9|I": 94,
+    "platea|4|7|I": 109,
+    "platea|4|5|I": 111,
+    "platea|4|3|I": 90,
+    "platea|4|1|I": 103,
+    "platea|5|28|P": 134,
+    "platea|5|26|P": 106,
+    "platea|5|24|P": 87,
+    "platea|5|22|P": 116,
+    "platea|5|20|P": 51,
+    "platea|5|18|P": 85,
+    "platea|5|16|P": 86,
+    "platea|5|14|P": 105,
+    "platea|5|12|P": 132,
+    "platea|5|10|P": 108,
+    "platea|5|8|P": 79,
+    "platea|5|6|P": 93,
+    "platea|5|4|P": 78,
+    "platea|5|2|P": 65,
+    "platea|5|27|I": 52,
+    "platea|5|25|I": 97,
+    "platea|5|23|I": 96,
+    "platea|5|21|I": 100,
+    "platea|5|19|I": 66,
+    "platea|5|17|I": 123,
+    "platea|5|15|I": 53,
+    "platea|5|13|I": 128,
+    "platea|5|11|I": 131,
+    "platea|5|9|I": 60,
+    "platea|5|7|I": 117,
+    "platea|5|5|I": 80,
+    "platea|5|3|I": 112,
+    "platea|5|1|I": 113,
+    "platea|6|29|I": 54,
+    "platea|6|27|I": 77,
+    "platea|6|25|I": 91,
+    "platea|6|23|I": 84,
+    "platea|6|21|I": 99,
+    "platea|6|19|I": 72,
+    "platea|6|17|I": 82,
+    "platea|6|15|I": 124,
+    "platea|6|13|I": 89,
+    "platea|6|11|I": 135,
+    "platea|6|9|I": 59,
+    "platea|6|7|I": 115,
+    "platea|6|5|I": 55,
+    "platea|6|3|I": 81,
+    "platea|6|1|I": 118,
+    "platea|1|28|P": 152,
+    "platea|1|30|P": 169
   },
   "nextId": 170
 }

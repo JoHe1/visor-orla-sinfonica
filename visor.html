@@ -289,7 +289,7 @@ function createStudentCard(stu) {
   }).join('');
 
   const card = el('div', 'student-card' + (selStu && selStu.id === stu.id ? ' selected' : ''));
-  const badge = stu.type === 'teacher' ? '👨‍🏫 ' : '';
+  const badge = stu.type === 'teacher' ? 'Prof. ' : '';
 
   card.innerHTML = `
     <div class="student-top">
