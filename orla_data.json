@@ -194,7 +194,8 @@
       "name": "Alberto Guedes Martín",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": null
     },
     {
       "id": 29,
@@ -300,7 +301,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": "platea|1|6|P"
+      "primarySeat": null
     },
     {
       "id": 44,
@@ -602,7 +603,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": "platea|1|8|P"
+      "primarySeat": null
     },
     {
       "id": 87,
@@ -813,7 +814,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": "platea|1|2|P"
+      "primarySeat": null
     },
     {
       "id": 117,
@@ -821,7 +822,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": "platea|1|4|P"
+      "primarySeat": null
     },
     {
       "id": 118,
@@ -954,270 +955,311 @@
       "name": "Cayetano Guerra Artal",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|26|P"
     },
     {
       "id": 137,
       "name": "Francisco Mario Hernandez Tejera",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|24|P"
     },
     {
       "id": 138,
       "name": "Carmelo Ruben García Rodríguez",
       "seats": 1,
       "type": "teacher",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|4|28|P"
     },
     {
       "id": 139,
       "name": "Luis Álvarez León",
       "seats": 1,
       "type": "teacher",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|4|42|P"
     },
     {
       "id": 140,
       "name": "María Cristina Carmona Duarte",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|1|38|P"
     },
     {
       "id": 141,
       "name": "José Évora Gómez",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|2|28|P"
     },
     {
       "id": 142,
       "name": "José Javier Lorenzo Navarro",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|34|P"
     },
     {
       "id": 143,
       "name": "Javier Sánchez Pérez",
       "seats": 1,
       "type": "teacher",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|36|P"
     },
     {
       "id": 144,
       "name": "Juan María Hernández Guerra",
       "seats": 1,
       "type": "teacher",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|2|38|P"
     },
     {
       "id": 145,
       "name": "Adrián Peñate Sánchez",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|2|32|P"
     },
     {
       "id": 146,
       "name": "Victoria Torres Rodríguez",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|2|24|P"
     },
     {
       "id": 147,
       "name": "María Teresa García Rodríguez",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|3|30|P"
     },
     {
       "id": 148,
       "name": "Gabino Padrón Morales",
       "seats": 1,
       "type": "teacher",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|2|34|P"
     },
     {
       "id": 149,
       "name": "Rayco Sánchez García",
       "seats": 1,
       "type": "teacher",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|2|36|P"
     },
     {
       "id": 150,
       "name": "José Carlos Rodríguez Rodríguez",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|1|22|P"
     },
     {
       "id": 151,
       "name": "Rafael Ricardo Suarez Vega",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|2|40|P"
     },
     {
       "id": 152,
       "name": "María Dolores Afonso Suárez",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|28|P"
     },
     {
       "id": 153,
       "name": "Antonio Andrés Ocón Carreras",
       "seats": 1,
       "type": "teacher",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|4|40|P"
     },
     {
       "id": 154,
       "name": "Axel Cabrera Rodríguez",
       "seats": 1,
       "type": "teacher",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|4|38|P"
     },
     {
       "id": 155,
       "name": "Gabriel de Blasio García",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|38|P"
     },
     {
       "id": 156,
       "name": "José Daniel Hernández Sosa",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|32|P"
     },
     {
       "id": 157,
       "name": "Oliverio Jesús Santana Jaria",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|3|36|P"
     },
     {
       "id": 158,
       "name": "Juan de Dios Duque Martín de Oliva",
       "seats": 1,
       "type": "teacher",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|3|28|P"
     },
     {
       "id": 159,
       "name": "Nelson Monzón López",
       "seats": 1,
       "type": "teacher",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|2|26|P"
     },
     {
       "id": 160,
       "name": "José Ignacio Salas Cáceres",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|4|36|P"
     },
     {
       "id": 161,
       "name": "José Miguel Santos Espino",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|4|30|P"
     },
     {
       "id": 162,
       "name": "Octavio Mayor González",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|3|26|P"
     },
     {
       "id": 163,
       "name": "José Juan Hernández Cabrera",
       "seats": 1,
       "type": "teacher",
-      "color": "#E2F0CB"
+      "color": "#E2F0CB",
+      "primarySeat": "platea|2|30|P"
     },
     {
       "id": 164,
       "name": "Juan Carlos Quevedo",
       "seats": 1,
       "type": "teacher",
-      "color": "#B5EAD7"
+      "color": "#B5EAD7",
+      "primarySeat": "platea|4|34|P"
     },
     {
       "id": 165,
       "name": "Agustín Trujillo del Pino",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|3|34|P"
     },
     {
       "id": 166,
       "name": "Jose María Quinteiro González",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2"
+      "color": "#FFB7B2",
+      "primarySeat": "platea|3|40|P"
     },
     {
       "id": 167,
       "name": "Zenón Hernández Figueroa",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFDAC1"
+      "color": "#FFDAC1",
+      "primarySeat": "platea|4|32|P"
+    },
+    {
+      "id": 168,
+      "name": "Ángel Quintana Gómez",
+      "seats": 1,
+      "type": "teacher",
+      "isManual": false,
+      "color": "#E2F0CB",
+      "primarySeat": "platea|3|32|P"
+    },
+    {
+      "id": 169,
+      "name": "Modesto Fernando Castrillón Santana",
+      "seats": 1,
+      "type": "teacher",
+      "isManual": false,
+      "color": "#B5EAD7",
+      "primarySeat": "platea|1|30|P"
     }
   ],
   "reservations": {
-    "platea|1|2|P": 116,
-    "platea|1|22|P": 116,
-    "platea|1|24|P": 116,
-    "platea|1|26|P": 116,
-    "platea|1|28|P": 116,
-    "platea|1|30|P": 116,
-    "platea|1|32|P": 116,
-    "platea|1|34|P": 116,
-    "platea|1|38|P": 116,
-    "platea|1|36|P": 116,
-    "platea|1|4|P": 117,
-    "platea|2|26|P": 117,
-    "platea|2|28|P": 117,
-    "platea|2|30|P": 117,
-    "platea|2|32|P": 117,
-    "platea|2|34|P": 117,
-    "platea|2|36|P": 117,
-    "platea|2|38|P": 117,
-    "platea|2|40|P": 117,
-    "platea|3|26|P": 117,
-    "platea|2|24|P": 117,
-    "platea|1|6|P": 43,
-    "platea|3|28|P": 43,
-    "platea|3|30|P": 43,
-    "platea|3|32|P": 43,
-    "platea|3|34|P": 43,
-    "platea|3|36|P": 43,
-    "platea|3|38|P": 43,
-    "platea|3|40|P": 43,
-    "platea|4|28|P": 43,
-    "platea|4|30|P": 43,
-    "platea|4|32|P": 43,
-    "platea|1|8|P": 86,
-    "platea|4|34|P": 86,
-    "platea|4|36|P": 86,
-    "platea|4|38|P": 86,
-    "platea|4|40|P": 86,
-    "platea|4|42|P": 86,
-    "platea|5|30|P": 86,
-    "platea|5|32|P": 86,
-    "platea|5|34|P": 86,
-    "platea|5|36|P": 86,
-    "platea|5|38|P": 86
+    "platea|2|28|P": 141,
+    "platea|2|30|P": 163,
+    "platea|2|32|P": 145,
+    "platea|2|34|P": 148,
+    "platea|2|36|P": 149,
+    "platea|2|24|P": 146,
+    "platea|2|26|P": 159,
+    "platea|3|26|P": 162,
+    "platea|3|28|P": 158,
+    "platea|2|38|P": 144,
+    "platea|2|40|P": 151,
+    "platea|3|30|P": 147,
+    "platea|3|34|P": 165,
+    "platea|3|38|P": 155,
+    "platea|3|36|P": 157,
+    "platea|3|40|P": 166,
+    "platea|4|28|P": 138,
+    "platea|4|30|P": 161,
+    "platea|4|32|P": 167,
+    "platea|4|34|P": 164,
+    "platea|4|36|P": 160,
+    "platea|4|38|P": 154,
+    "platea|4|40|P": 153,
+    "platea|3|32|P": 168,
+    "platea|1|24|P": 137,
+    "platea|1|22|P": 150,
+    "platea|1|30|P": 169,
+    "platea|1|32|P": 156,
+    "platea|1|26|P": 136,
+    "platea|1|28|P": 152,
+    "platea|1|34|P": 142,
+    "platea|1|36|P": 143,
+    "platea|1|38|P": 140,
+    "platea|4|42|P": 139
   },
-  "nextId": 168
+  "nextId": 170
 }
