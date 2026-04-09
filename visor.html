@@ -8,10 +8,59 @@
 <style>
   /* Quitar el cursor de la manita en los asientos para indicar que no se pueden clicar */
   .seat { cursor: default !important; }
+  
+  /* ═══════════════════════════════════════════════════════════════
+     NUEVO: LÓGICA DE MENÚ DESPLEGABLE (Móvil y PC)
+  ═══════════════════════════════════════════════════════════════ */
+  .toggle-menu-btn {
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+  }
+  .toggle-menu-btn:hover { background: var(--surface2); }
+
+  /* Capa oscura para cuando se abre el menú en el móvil */
+  .mobile-overlay {
+    display: none;
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4); z-index: 1000;
+  }
+
+  /* Comportamiento en Escritorio (PC) - Colapsable lateralmente */
+  @media (min-width: 769px) {
+    .app { transition: grid-template-columns 0.3s ease; }
+    .app.collapsed { grid-template-columns: 0px 1fr; }
+    .sidebar { transition: transform 0.3s ease, opacity 0.3s ease; width: 290px; }
+    .app.collapsed .sidebar { transform: translateX(-100%); opacity: 0; pointer-events: none; }
+  }
+
+  /* Comportamiento en Móvil - Cajón flotante oculto por defecto */
+  @media (max-width: 768px) {
+    .app { grid-template-columns: 1fr; } /* El mapa ocupa todo el ancho */
+    .sidebar {
+      position: fixed; top: 0; left: -320px;
+      width: 290px; height: 100%;
+      z-index: 1001; /* Por encima de la capa oscura */
+      transition: left 0.3s ease;
+      box-shadow: 4px 0 15px rgba(0,0,0,0.2);
+    }
+    .sidebar.open { left: 0; }
+    .mobile-overlay.open { display: block; }
+  }
 </style>
 </head>
 <body>
 <div class="app">
+
+  <div class="mobile-overlay" id="mobile-overlay" onclick="toggleSidebar()"></div>
 
   <div class="sidebar">
     <div class="sidebar-header">
@@ -32,12 +81,11 @@
 
   <div class="main">
     <div class="toolbar">
-      <h1>Sala Sinfónica · Plano Oficial de Asientos</h1>
-      <div class="legend">
+      <button class="toggle-menu-btn" onclick="toggleSidebar()" title="Abrir/Cerrar Menú">☰</button>
+      
+      <h1>Sala Sinfónica · Plano Oficial</h1>
+      <div class="legend" style="margin-left:auto;">
         <div class="legend-dot" style="background:var(--surface2)"></div>Libre
-      </div>
-      <div class="legend">
-        <div class="legend-dot" style="background:#888;border-color:transparent"></div>Reservado
       </div>
     </div>
     <div class="hall" id="hall"></div>
@@ -58,11 +106,36 @@ let state = { students: [], reservations: {} };
 let selStu = null; 
 
 /* ════════════════════════════════════════════════════════════
+   CONTROL DEL MENÚ DESPLEGABLE
+════════════════════════════════════════════════════════════ */
+function toggleSidebar() {
+  const app = document.querySelector('.app');
+  const sidebar = document.querySelector('.sidebar');
+  const overlay = document.getElementById('mobile-overlay');
+  
+  if (window.innerWidth > 768) {
+    // Si estamos en PC, comprime la cuadrícula
+    app.classList.toggle('collapsed');
+  } else {
+    // Si estamos en móvil, abre el cajón flotante
+    sidebar.classList.toggle('open');
+    overlay.classList.toggle('open');
+  }
+}
+
+// Función para cerrar automáticamente el menú en móviles al hacer clic en un nombre
+function autoCloseSidebarMobile() {
+  if (window.innerWidth <= 768) {
+    document.querySelector('.sidebar').classList.remove('open');
+    document.getElementById('mobile-overlay').classList.remove('open');
+  }
+}
+
+/* ════════════════════════════════════════════════════════════
    CARGA DE DATOS (Lee directamente el archivo local orla_data.json)
 ════════════════════════════════════════════════════════════ */
 async function fetchData() {
   try {
-    // ⚠️ CORRECCIÓN CLAVE: Lee el archivo directamente, sin usar localhost
     const r = await fetch('orla_data.json', { cache: 'no-store' });
     if (r.ok) { 
       const d = await r.json(); 
@@ -230,7 +303,6 @@ function makeSeat(s, rowDef) {
       }
     }
   } else {
-    // Libre
     if (!isPMR) {
         sEl.style.color = 'var(--text3)'; sEl.style.fontSize = '8px';
         sEl.style.display = 'flex'; sEl.style.alignItems = 'center'; sEl.style.justifyContent = 'center';
@@ -284,12 +356,11 @@ function createStudentCard(stu) {
   const pills = keys.map(k => {
     const p = k.split('|');
     const z = p[0] === 'platea' ? 'P' : p[0] === 'anf1' ? 'A1' : p[0] === 'galeria' ? 'G' : 'A2';
-    // ⚠️ Sin evento onclick para que no puedan liberar el asiento
     return `<span class="seat-pill" style="background:${stu.color}; cursor:default;">${z} F${p[1]}·${p[2]}</span>`;
   }).join('');
 
   const card = el('div', 'student-card' + (selStu && selStu.id === stu.id ? ' selected' : ''));
-  const badge = stu.type === 'teacher' ? 'Prof. ' : '';
+  const badge = stu.type === 'teacher' ? '👨‍🏫 ' : '';
 
   card.innerHTML = `
     <div class="student-top">
@@ -307,7 +378,8 @@ function createStudentCard(stu) {
   card.addEventListener('click', () => { 
     selStu = (selStu && selStu.id === stu.id) ? null : stu; 
     renderSidebar(); 
-    renderHall(); // Actualizar iluminación
+    renderHall(); // Actualiza el brillo del asiento
+    autoCloseSidebarMobile(); // ⚠️ Oculta el menú en móviles para ver la butaca
   });
   return card;
 }
@@ -372,7 +444,7 @@ dragHall.addEventListener('mousedown', (e) => {
   scrollLeft = dragHall.scrollLeft; scrollTop = dragHall.scrollTop;
 });
 dragHall.addEventListener('mouseleave', () => { if(!isDown) return; isDown = false; dragHall.style.cursor = 'grab'; });
-dragHall.addEventListener('mouseup', () => { if(!isDown) return; isDown = false; dragHall.style.cursor = 'grab'; });
+window.addEventListener('mouseup', () => { if(!isDown) return; isDown = false; dragHall.style.cursor = 'grab'; });
 dragHall.addEventListener('mousemove', (e) => {
   if (!isDown) return; e.preventDefault();
   const x = e.pageX - dragHall.offsetLeft; const y = e.pageY - dragHall.offsetTop;
