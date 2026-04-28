@@ -6,7 +6,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|3|10|P"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|2|2|P"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|1|18|P"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|1|10|P"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|3|22|P"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|4|24|P"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|1|4|P"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|2|8|P"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|1|20|P"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|3|14|P"
     },
     {
       "id": 11,
@@ -86,7 +86,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|1|6|P"
     },
     {
       "id": 12,
@@ -94,7 +94,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|4|18|P"
     },
     {
       "id": 13,
@@ -102,7 +102,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|4|22|P"
     },
     {
       "id": 14,
@@ -110,7 +110,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|3|18|P"
     },
     {
       "id": 15,
@@ -118,7 +118,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|4|14|P"
     },
     {
       "id": 16,
@@ -126,7 +126,7 @@
       "seats": 13,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|1|12|P"
     },
     {
       "id": 17,
@@ -134,7 +134,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|3|6|P"
     },
     {
       "id": 18,
@@ -142,7 +142,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|1|14|P"
     },
     {
       "id": 19,
@@ -150,7 +150,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|2|20|P"
     },
     {
       "id": 20,
@@ -158,7 +158,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|3|12|P"
     },
     {
       "id": 21,
@@ -166,7 +166,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|1|2|P"
     },
     {
       "id": 22,
@@ -174,7 +174,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|4|20|P"
     },
     {
       "id": 23,
@@ -182,7 +182,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|2|10|P"
     },
     {
       "id": 24,
@@ -190,7 +190,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|4|8|P"
     },
     {
       "id": 25,
@@ -198,7 +198,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|4|6|P"
     },
     {
       "id": 26,
@@ -206,7 +206,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|4|12|P"
     },
     {
       "id": 27,
@@ -214,7 +214,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|3|16|P"
     },
     {
       "id": 28,
@@ -222,7 +222,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|2|18|P"
     },
     {
       "id": 29,
@@ -230,7 +230,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|2|6|P"
     },
     {
       "id": 30,
@@ -238,7 +238,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|3|4|P"
     },
     {
       "id": 31,
@@ -246,7 +246,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|4|4|P"
     },
     {
       "id": 32,
@@ -254,7 +254,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|1|16|P"
     },
     {
       "id": 33,
@@ -262,7 +262,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|4|16|P"
     },
     {
       "id": 34,
@@ -270,7 +270,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|2|14|P"
     },
     {
       "id": 35,
@@ -278,7 +278,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|3|8|P"
     },
     {
       "id": 36,
@@ -286,7 +286,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|2|16|P"
     },
     {
       "id": 37,
@@ -294,7 +294,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|1|8|P"
     },
     {
       "id": 38,
@@ -302,7 +302,7 @@
       "seats": 7,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|2|12|P"
     },
     {
       "id": 39,
@@ -310,7 +310,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|3|2|P"
     },
     {
       "id": 40,
@@ -318,7 +318,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|2|22|P"
     },
     {
       "id": 41,
@@ -326,7 +326,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|3|24|P"
     },
     {
       "id": 42,
@@ -334,7 +334,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|2|4|P"
     },
     {
       "id": 43,
@@ -342,7 +342,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|3|20|P"
     },
     {
       "id": 44,
@@ -350,7 +350,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|4|10|P"
     },
     {
       "id": 45,
@@ -358,7 +358,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|4|26|P"
     },
     {
       "id": 46,
@@ -366,7 +366,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|2|7|I"
     },
     {
       "id": 47,
@@ -374,7 +374,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|4|17|I"
     },
     {
       "id": 48,
@@ -382,7 +382,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|1|3|I"
     },
     {
       "id": 49,
@@ -390,7 +390,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|3|9|I"
     },
     {
       "id": 50,
@@ -398,7 +398,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|3|21|I"
     },
     {
       "id": 51,
@@ -406,7 +406,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|5|20|P"
     },
     {
       "id": 52,
@@ -414,7 +414,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|5|27|I"
     },
     {
       "id": 53,
@@ -422,7 +422,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|5|15|I"
     },
     {
       "id": 54,
@@ -430,7 +430,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|6|29|I"
     },
     {
       "id": 55,
@@ -438,7 +438,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|6|5|I"
     },
     {
       "id": 56,
@@ -446,7 +446,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|4|13|I"
     },
     {
       "id": 57,
@@ -454,7 +454,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|1|11|I"
     },
     {
       "id": 58,
@@ -462,7 +462,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|1|19|I"
     },
     {
       "id": 59,
@@ -470,7 +470,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|6|9|I"
     },
     {
       "id": 60,
@@ -478,7 +478,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|5|9|I"
     },
     {
       "id": 61,
@@ -486,7 +486,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|1|13|I"
     },
     {
       "id": 62,
@@ -494,7 +494,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|3|13|I"
     },
     {
       "id": 63,
@@ -502,7 +502,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|4|23|I"
     },
     {
       "id": 64,
@@ -510,7 +510,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|2|15|I"
     },
     {
       "id": 65,
@@ -518,7 +518,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|5|2|P"
     },
     {
       "id": 66,
@@ -526,7 +526,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|5|19|I"
     },
     {
       "id": 67,
@@ -534,7 +534,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|1|15|I"
     },
     {
       "id": 68,
@@ -542,7 +542,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|2|5|I"
     },
     {
       "id": 69,
@@ -550,7 +550,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|3|3|I"
     },
     {
       "id": 70,
@@ -558,7 +558,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|3|5|I"
     },
     {
       "id": 71,
@@ -566,7 +566,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|4|19|I"
     },
     {
       "id": 72,
@@ -574,7 +574,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|6|19|I"
     },
     {
       "id": 73,
@@ -582,7 +582,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|3|23|I"
     },
     {
       "id": 74,
@@ -590,7 +590,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|1|9|I"
     },
     {
       "id": 75,
@@ -598,7 +598,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|3|7|I"
     },
     {
       "id": 76,
@@ -606,7 +606,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|1|7|I"
     },
     {
       "id": 77,
@@ -614,7 +614,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|6|27|I"
     },
     {
       "id": 78,
@@ -622,7 +622,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|5|4|P"
     },
     {
       "id": 79,
@@ -630,7 +630,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|5|8|P"
     },
     {
       "id": 80,
@@ -638,7 +638,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|5|5|I"
     },
     {
       "id": 81,
@@ -646,7 +646,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|6|3|I"
     },
     {
       "id": 82,
@@ -654,7 +654,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|6|17|I"
     },
     {
       "id": 83,
@@ -662,7 +662,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|2|17|I"
     },
     {
       "id": 85,
@@ -670,7 +670,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|5|18|P"
     },
     {
       "id": 86,
@@ -678,7 +678,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|5|16|P"
     },
     {
       "id": 87,
@@ -686,7 +686,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|5|24|P"
     },
     {
       "id": 88,
@@ -694,7 +694,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|4|21|I"
     },
     {
       "id": 89,
@@ -702,7 +702,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|6|13|I"
     },
     {
       "id": 90,
@@ -710,7 +710,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|4|3|I"
     },
     {
       "id": 91,
@@ -718,7 +718,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|6|25|I"
     },
     {
       "id": 92,
@@ -726,7 +726,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|3|17|I"
     },
     {
       "id": 93,
@@ -734,7 +734,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|5|6|P"
     },
     {
       "id": 94,
@@ -742,7 +742,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|4|9|I"
     },
     {
       "id": 95,
@@ -750,7 +750,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|2|11|I"
     },
     {
       "id": 96,
@@ -758,7 +758,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|5|23|I"
     },
     {
       "id": 97,
@@ -766,7 +766,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|5|25|I"
     },
     {
       "id": 98,
@@ -774,7 +774,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|4|11|I"
     },
     {
       "id": 99,
@@ -782,7 +782,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|6|21|I"
     },
     {
       "id": 100,
@@ -790,7 +790,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|5|21|I"
     },
     {
       "id": 101,
@@ -798,7 +798,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|3|11|I"
     },
     {
       "id": 102,
@@ -806,7 +806,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|2|9|I"
     },
     {
       "id": 103,
@@ -814,7 +814,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|4|1|I"
     },
     {
       "id": 104,
@@ -822,7 +822,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|1|5|I"
     },
     {
       "id": 105,
@@ -830,7 +830,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|5|14|P"
     },
     {
       "id": 106,
@@ -838,7 +838,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|5|26|P"
     },
     {
       "id": 107,
@@ -846,7 +846,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|4|2|P"
     },
     {
       "id": 108,
@@ -854,7 +854,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|5|10|P"
     },
     {
       "id": 109,
@@ -862,7 +862,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|4|7|I"
     },
     {
       "id": 110,
@@ -870,7 +870,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|1|1|I"
     },
     {
       "id": 111,
@@ -878,7 +878,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|4|5|I"
     },
     {
       "id": 112,
@@ -886,7 +886,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|5|3|I"
     },
     {
       "id": 113,
@@ -894,7 +894,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|5|1|I"
     },
     {
       "id": 114,
@@ -902,7 +902,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|3|19|I"
     },
     {
       "id": 115,
@@ -910,7 +910,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|6|7|I"
     },
     {
       "id": 116,
@@ -918,7 +918,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|5|22|P"
     },
     {
       "id": 117,
@@ -926,7 +926,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|5|7|I"
     },
     {
       "id": 118,
@@ -934,15 +934,15 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|6|1|I"
     },
     {
       "id": 119,
       "name": "Gabriel Godoy Navarro",
       "seats": 11,
       "type": "graduate",
-      "color": "#E2F0CB",
-      "primarySeat": null
+      "color": "#C7CEEA",
+      "primarySeat": "platea|4|15|I"
     },
     {
       "id": 120,
@@ -950,7 +950,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|1|17|I"
     },
     {
       "id": 121,
@@ -958,7 +958,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|2|1|I"
     },
     {
       "id": 122,
@@ -966,7 +966,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|4|25|I"
     },
     {
       "id": 123,
@@ -974,7 +974,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|5|17|I"
     },
     {
       "id": 124,
@@ -982,7 +982,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|6|15|I"
     },
     {
       "id": 125,
@@ -990,7 +990,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|3|15|I"
     },
     {
       "id": 126,
@@ -998,7 +998,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|2|21|I"
     },
     {
       "id": 127,
@@ -1006,7 +1006,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|2|19|I"
     },
     {
       "id": 128,
@@ -1014,7 +1014,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|5|13|I"
     },
     {
       "id": 129,
@@ -1022,7 +1022,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|3|1|I"
     },
     {
       "id": 130,
@@ -1030,7 +1030,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|2|13|I"
     },
     {
       "id": 131,
@@ -1038,7 +1038,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|5|11|I"
     },
     {
       "id": 132,
@@ -1046,7 +1046,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|5|12|P"
     },
     {
       "id": 133,
@@ -1054,7 +1054,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|2|3|I"
     },
     {
       "id": 134,
@@ -1062,7 +1062,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|5|28|P"
     },
     {
       "id": 135,
@@ -1070,7 +1070,7 @@
       "seats": 11,
       "type": "graduate",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|6|11|I"
     },
     {
       "id": 136,
@@ -1078,7 +1078,7 @@
       "seats": 1,
       "type": "teacher",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|2|26|P"
     },
     {
       "id": 137,
@@ -1086,7 +1086,7 @@
       "seats": 1,
       "type": "teacher",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|2|24|P"
     },
     {
       "id": 138,
@@ -1094,7 +1094,7 @@
       "seats": 1,
       "type": "teacher",
       "color": "#FFDAC1",
-      "primarySeat": null
+      "primarySeat": "platea|2|28|P"
     },
     {
       "id": 139,
@@ -1102,7 +1102,7 @@
       "seats": 1,
       "type": "teacher",
       "color": "#E2F0CB",
-      "primarySeat": null
+      "primarySeat": "platea|1|36|P"
     },
     {
       "id": 140,
@@ -1110,7 +1110,7 @@
       "seats": 1,
       "type": "teacher",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|1|32|P"
     },
     {
       "id": 141,
@@ -1118,7 +1118,7 @@
       "seats": 1,
       "type": "teacher",
       "color": "#C7CEEA",
-      "primarySeat": null
+      "primarySeat": "platea|2|23|I"
     },
     {
       "id": 142,
@@ -1126,7 +1126,7 @@
       "seats": 1,
       "type": "teacher",
       "color": "#FFB7B2",
-      "primarySeat": null
+      "primarySeat": "platea|1|34|P"
     },
     {
       "id": 143,
@@ -1134,208 +1134,143 @@
       "seats": 1,
       "type": "teacher",
       "color": "#FFDAC1",
-      "primarySeat": null
-    },
-    {
-      "id": 144,
-      "name": "Juan María Hernández Guerra",
-      "seats": 1,
-      "type": "teacher",
-      "color": "#E2F0CB",
-      "primarySeat": null
-    },
-    {
-      "id": 145,
-      "name": "Adrián Peñate Sánchez",
-      "seats": 1,
-      "type": "teacher",
-      "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|1|38|P"
     },
     {
       "id": 146,
       "name": "Victoria Torres Rodríguez",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA",
-      "primarySeat": null
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|22|P"
     },
     {
       "id": 147,
       "name": "María Teresa García Rodríguez",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2",
-      "primarySeat": null
+      "color": "#B5EAD7",
+      "primarySeat": "platea|1|30|P"
     },
     {
       "id": 148,
       "name": "Gabino Padrón Morales",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFDAC1",
-      "primarySeat": null
+      "color": "#C7CEEA",
+      "primarySeat": "platea|1|26|P"
     },
     {
       "id": 149,
       "name": "Rayco Sánchez García",
       "seats": 1,
       "type": "teacher",
-      "color": "#E2F0CB",
-      "primarySeat": null
-    },
-    {
-      "id": 150,
-      "name": "José Carlos Rodríguez Rodríguez",
-      "seats": 1,
-      "type": "teacher",
-      "color": "#B5EAD7",
-      "primarySeat": null
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|24|P"
     },
     {
       "id": 151,
       "name": "Rafael Ricardo Suarez Vega",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA",
-      "primarySeat": null
-    },
-    {
-      "id": 152,
-      "name": "María Dolores Afonso Suárez",
-      "seats": 1,
-      "type": "teacher",
-      "color": "#FFB7B2",
-      "primarySeat": null
-    },
-    {
-      "id": 153,
-      "name": "Antonio Andrés Ocón Carreras",
-      "seats": 1,
-      "type": "teacher",
-      "color": "#FFDAC1",
-      "primarySeat": null
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|28|P"
     },
     {
       "id": 154,
       "name": "Axel Cabrera Rodríguez",
       "seats": 1,
       "type": "teacher",
-      "color": "#E2F0CB",
-      "primarySeat": null
+      "color": "#C7CEEA",
+      "primarySeat": "platea|2|29|I"
     },
     {
       "id": 155,
       "name": "Gabriel de Blasio García",
       "seats": 1,
       "type": "teacher",
-      "color": "#B5EAD7",
-      "primarySeat": null
+      "color": "#FFB7B2",
+      "primarySeat": "platea|2|27|I"
     },
     {
       "id": 156,
       "name": "José Daniel Hernández Sosa",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA",
-      "primarySeat": null
+      "color": "#FFDAC1",
+      "primarySeat": "platea|2|25|I"
     },
     {
       "id": 157,
       "name": "Oliverio Jesús Santana Jaria",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2",
-      "primarySeat": null
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|23|I"
     },
     {
       "id": 158,
       "name": "Juan de Dios Duque Martín de Oliva",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFDAC1",
-      "primarySeat": null
+      "color": "#B5EAD7",
+      "primarySeat": "platea|1|29|I"
     },
     {
       "id": 159,
       "name": "Nelson Monzón López",
       "seats": 1,
       "type": "teacher",
-      "color": "#E2F0CB",
-      "primarySeat": null
+      "color": "#C7CEEA",
+      "primarySeat": "platea|1|27|I"
     },
     {
       "id": 160,
       "name": "José Ignacio Salas Cáceres",
       "seats": 1,
       "type": "teacher",
-      "color": "#B5EAD7",
-      "primarySeat": null
+      "color": "#FFB7B2",
+      "primarySeat": "platea|1|37|I"
     },
     {
       "id": 161,
       "name": "José Miguel Santos Espino",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA",
-      "primarySeat": null
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|31|I"
     },
     {
       "id": 162,
       "name": "Octavio Mayor González",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2",
-      "primarySeat": null
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|25|I"
     },
     {
       "id": 163,
       "name": "José Juan Hernández Cabrera",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFDAC1",
-      "primarySeat": null
-    },
-    {
-      "id": 164,
-      "name": "Juan Carlos Quevedo",
-      "seats": 1,
-      "type": "teacher",
-      "color": "#E2F0CB",
-      "primarySeat": null
-    },
-    {
-      "id": 165,
-      "name": "Agustín Trujillo del Pino",
-      "seats": 1,
-      "type": "teacher",
       "color": "#B5EAD7",
-      "primarySeat": null
+      "primarySeat": "platea|1|35|I"
     },
     {
       "id": 166,
       "name": "Jose María Quinteiro González",
       "seats": 1,
       "type": "teacher",
-      "color": "#C7CEEA",
-      "primarySeat": null
+      "color": "#FFDAC1",
+      "primarySeat": "platea|1|33|I"
     },
     {
       "id": 167,
       "name": "Zenón Hernández Figueroa",
       "seats": 1,
       "type": "teacher",
-      "color": "#FFB7B2",
-      "primarySeat": null
-    },
-    {
-      "id": 169,
-      "name": "Modesto Fernando Castrillón Santana",
-      "seats": 1,
-      "type": "teacher",
-      "isManual": false,
-      "color": "#FFDAC1",
-      "primarySeat": null
+      "color": "#E2F0CB",
+      "primarySeat": "platea|1|21|I"
     },
     {
       "id": 170,
@@ -1343,9 +1278,1454 @@
       "seats": 11,
       "type": "graduate",
       "isManual": false,
-      "color": "#E2F0CB"
+      "color": "#C7CEEA",
+      "primarySeat": "platea|6|23|I"
     }
   ],
-  "reservations": {},
+  "reservations": {
+    "platea|1|20|P": 9,
+    "platea|1|18|P": 3,
+    "platea|1|16|P": 32,
+    "platea|1|14|P": 18,
+    "platea|1|12|P": 16,
+    "platea|1|10|P": 4,
+    "platea|1|8|P": 37,
+    "platea|1|6|P": 11,
+    "platea|1|4|P": 7,
+    "platea|1|2|P": 21,
+    "platea|2|22|P": 40,
+    "platea|2|20|P": 19,
+    "platea|2|18|P": 28,
+    "platea|2|16|P": 36,
+    "platea|2|14|P": 34,
+    "platea|2|12|P": 38,
+    "platea|2|10|P": 23,
+    "platea|2|8|P": 8,
+    "platea|2|6|P": 29,
+    "platea|2|4|P": 42,
+    "platea|2|2|P": 2,
+    "platea|3|24|P": 41,
+    "platea|3|22|P": 5,
+    "platea|3|20|P": 43,
+    "platea|3|18|P": 14,
+    "platea|3|16|P": 27,
+    "platea|3|14|P": 10,
+    "platea|3|12|P": 20,
+    "platea|3|10|P": 1,
+    "platea|3|8|P": 35,
+    "platea|3|6|P": 17,
+    "platea|3|4|P": 30,
+    "platea|3|2|P": 39,
+    "platea|4|26|P": 45,
+    "platea|4|24|P": 6,
+    "platea|4|22|P": 13,
+    "platea|4|20|P": 22,
+    "platea|4|18|P": 12,
+    "platea|4|16|P": 33,
+    "platea|4|14|P": 15,
+    "platea|4|12|P": 26,
+    "platea|4|10|P": 44,
+    "platea|4|8|P": 24,
+    "platea|4|6|P": 25,
+    "platea|4|4|P": 31,
+    "platea|4|2|P": 107,
+    "platea|5|28|P": 134,
+    "platea|5|26|P": 106,
+    "platea|5|24|P": 87,
+    "platea|5|22|P": 116,
+    "platea|5|20|P": 51,
+    "platea|5|18|P": 85,
+    "platea|5|16|P": 86,
+    "platea|5|14|P": 105,
+    "platea|5|12|P": 132,
+    "platea|5|10|P": 108,
+    "platea|5|8|P": 79,
+    "platea|5|6|P": 93,
+    "platea|5|4|P": 78,
+    "platea|5|2|P": 65,
+    "platea|1|19|I": 58,
+    "platea|1|17|I": 120,
+    "platea|1|15|I": 67,
+    "platea|1|13|I": 61,
+    "platea|1|11|I": 57,
+    "platea|1|9|I": 74,
+    "platea|1|7|I": 76,
+    "platea|1|5|I": 104,
+    "platea|1|3|I": 48,
+    "platea|1|1|I": 110,
+    "platea|2|21|I": 126,
+    "platea|2|19|I": 127,
+    "platea|2|17|I": 83,
+    "platea|2|15|I": 64,
+    "platea|2|13|I": 130,
+    "platea|2|11|I": 95,
+    "platea|2|9|I": 102,
+    "platea|2|7|I": 46,
+    "platea|2|5|I": 68,
+    "platea|2|3|I": 133,
+    "platea|2|1|I": 121,
+    "platea|3|23|I": 73,
+    "platea|3|21|I": 50,
+    "platea|3|19|I": 114,
+    "platea|3|17|I": 92,
+    "platea|3|15|I": 125,
+    "platea|3|13|I": 62,
+    "platea|3|11|I": 101,
+    "platea|3|9|I": 49,
+    "platea|3|7|I": 75,
+    "platea|3|5|I": 70,
+    "platea|3|3|I": 69,
+    "platea|3|1|I": 129,
+    "platea|4|25|I": 122,
+    "platea|4|23|I": 63,
+    "platea|4|21|I": 88,
+    "platea|4|19|I": 71,
+    "platea|4|17|I": 47,
+    "platea|4|15|I": 119,
+    "platea|4|13|I": 56,
+    "platea|4|11|I": 98,
+    "platea|4|9|I": 94,
+    "platea|4|7|I": 109,
+    "platea|4|5|I": 111,
+    "platea|4|3|I": 90,
+    "platea|4|1|I": 103,
+    "platea|5|27|I": 52,
+    "platea|5|25|I": 97,
+    "platea|5|23|I": 96,
+    "platea|5|21|I": 100,
+    "platea|5|19|I": 66,
+    "platea|5|17|I": 123,
+    "platea|5|15|I": 53,
+    "platea|5|13|I": 128,
+    "platea|5|11|I": 131,
+    "platea|5|9|I": 60,
+    "platea|5|7|I": 117,
+    "platea|5|5|I": 80,
+    "platea|5|3|I": 112,
+    "platea|5|1|I": 113,
+    "platea|6|29|I": 54,
+    "platea|6|27|I": 77,
+    "platea|6|25|I": 91,
+    "platea|6|23|I": 170,
+    "platea|6|21|I": 99,
+    "platea|6|19|I": 72,
+    "platea|6|17|I": 82,
+    "platea|6|15|I": 124,
+    "platea|6|13|I": 89,
+    "platea|6|11|I": 135,
+    "platea|6|9|I": 59,
+    "platea|6|7|I": 115,
+    "platea|6|5|I": 55,
+    "platea|6|3|I": 81,
+    "platea|6|1|I": 118,
+    "platea|1|21|I": 167,
+    "platea|1|22|P": 146,
+    "platea|1|24|P": 149,
+    "platea|1|28|P": 151,
+    "platea|1|23|I": 157,
+    "platea|1|25|I": 162,
+    "platea|1|27|I": 159,
+    "platea|1|30|P": 147,
+    "platea|1|32|P": 140,
+    "platea|1|36|P": 139,
+    "platea|1|29|I": 158,
+    "platea|1|31|I": 161,
+    "platea|1|33|I": 166,
+    "platea|1|35|I": 163,
+    "platea|1|34|P": 142,
+    "platea|1|37|I": 160,
+    "platea|2|23|I": 141,
+    "platea|2|25|I": 156,
+    "platea|1|38|P": 143,
+    "platea|2|27|I": 155,
+    "platea|1|26|P": 148,
+    "platea|2|24|P": 137,
+    "platea|2|26|P": 136,
+    "platea|2|28|P": 138,
+    "platea|2|29|I": 154,
+    "anf1|14|9002|P": 132,
+    "anf1|14|20|P": 132,
+    "anf1|14|18|P": 132,
+    "anf1|14|16|P": 132,
+    "anf1|14|14|P": 132,
+    "anf1|13|1|I": 109,
+    "anf1|13|3|I": 109,
+    "anf1|13|5|I": 109,
+    "anf1|13|7|I": 109,
+    "anf1|13|9|I": 109,
+    "anf1|13|11|I": 109,
+    "anf1|13|13|I": 109,
+    "anf1|13|15|I": 109,
+    "anf1|13|17|I": 109,
+    "anf1|13|19|I": 109,
+    "anf1|12|1|I": 119,
+    "anf1|12|3|I": 119,
+    "anf1|12|5|I": 119,
+    "anf1|12|7|I": 119,
+    "anf1|13|24|P": 170,
+    "anf1|13|26|P": 170,
+    "anf1|13|28|P": 170,
+    "anf1|13|30|P": 170,
+    "anf1|13|32|P": 170,
+    "anf1|13|34|P": 170,
+    "anf1|13|36|P": 170,
+    "anf1|13|38|P": 170,
+    "anf1|13|40|P": 170,
+    "anf1|13|42|P": 170,
+    "anf1|14|12|P": 132,
+    "anf1|13|22|P": 132,
+    "anf1|13|20|P": 132,
+    "anf1|13|18|P": 132,
+    "anf1|13|16|P": 132,
+    "platea|6|2|P": 1,
+    "platea|6|4|P": 1,
+    "platea|6|6|P": 1,
+    "platea|6|8|P": 1,
+    "platea|6|10|P": 1,
+    "platea|6|12|P": 1,
+    "platea|6|14|P": 1,
+    "platea|6|16|P": 1,
+    "platea|6|18|P": 1,
+    "platea|6|20|P": 1,
+    "platea|6|22|P": 78,
+    "platea|6|24|P": 78,
+    "platea|6|26|P": 78,
+    "platea|6|28|P": 78,
+    "platea|6|30|P": 78,
+    "platea|7|2|P": 15,
+    "platea|7|4|P": 15,
+    "platea|7|6|P": 15,
+    "platea|7|8|P": 15,
+    "platea|7|10|P": 15,
+    "platea|7|12|P": 15,
+    "platea|7|14|P": 15,
+    "platea|7|16|P": 15,
+    "platea|7|18|P": 15,
+    "platea|7|20|P": 15,
+    "platea|7|1|I": 131,
+    "platea|7|3|I": 131,
+    "platea|7|5|I": 131,
+    "platea|7|7|I": 131,
+    "platea|7|9|I": 131,
+    "platea|7|11|I": 131,
+    "platea|7|13|I": 131,
+    "platea|7|15|I": 131,
+    "platea|7|17|I": 131,
+    "platea|7|19|I": 131,
+    "platea|8|2|P": 19,
+    "platea|8|4|P": 19,
+    "platea|8|6|P": 19,
+    "platea|8|8|P": 19,
+    "platea|8|10|P": 19,
+    "platea|8|12|P": 19,
+    "platea|8|14|P": 19,
+    "platea|8|16|P": 19,
+    "platea|8|18|P": 19,
+    "platea|8|20|P": 19,
+    "platea|8|22|P": 20,
+    "platea|8|24|P": 20,
+    "platea|8|26|P": 20,
+    "platea|8|28|P": 20,
+    "platea|8|30|P": 20,
+    "platea|8|32|P": 20,
+    "platea|7|22|P": 20,
+    "platea|7|24|P": 20,
+    "platea|7|26|P": 20,
+    "platea|7|28|P": 20,
+    "platea|9|2|P": 24,
+    "platea|9|4|P": 24,
+    "platea|9|6|P": 24,
+    "platea|9|8|P": 24,
+    "platea|9|10|P": 24,
+    "platea|9|12|P": 24,
+    "platea|9|14|P": 24,
+    "platea|9|16|P": 24,
+    "platea|9|18|P": 24,
+    "platea|9|20|P": 24,
+    "platea|8|1|I": 56,
+    "platea|8|3|I": 56,
+    "platea|8|5|I": 56,
+    "platea|8|7|I": 56,
+    "platea|8|9|I": 56,
+    "platea|8|11|I": 56,
+    "platea|8|13|I": 56,
+    "platea|8|15|I": 56,
+    "platea|8|17|I": 56,
+    "platea|10|2|P": 45,
+    "platea|10|4|P": 45,
+    "platea|10|6|P": 45,
+    "platea|10|8|P": 45,
+    "platea|10|10|P": 45,
+    "platea|10|12|P": 45,
+    "platea|10|14|P": 45,
+    "platea|10|16|P": 45,
+    "platea|10|18|P": 45,
+    "platea|10|20|P": 45,
+    "platea|11|2|P": 116,
+    "platea|11|4|P": 116,
+    "platea|11|6|P": 116,
+    "platea|11|8|P": 116,
+    "platea|11|10|P": 116,
+    "platea|11|12|P": 116,
+    "platea|11|14|P": 116,
+    "platea|11|16|P": 116,
+    "platea|11|18|P": 116,
+    "platea|11|20|P": 116,
+    "platea|12|2|P": 12,
+    "platea|12|4|P": 12,
+    "platea|12|6|P": 12,
+    "platea|12|8|P": 12,
+    "platea|12|10|P": 12,
+    "platea|12|12|P": 12,
+    "platea|12|14|P": 12,
+    "platea|12|16|P": 12,
+    "platea|12|18|P": 12,
+    "platea|12|20|P": 12,
+    "platea|9|1|I": 62,
+    "platea|9|3|I": 62,
+    "platea|9|5|I": 62,
+    "platea|9|7|I": 62,
+    "platea|9|9|I": 62,
+    "platea|9|11|I": 62,
+    "platea|9|13|I": 62,
+    "platea|9|15|I": 62,
+    "platea|9|17|I": 62,
+    "platea|9|19|I": 62,
+    "platea|2|30|P": 18,
+    "platea|2|32|P": 18,
+    "platea|2|34|P": 18,
+    "platea|2|36|P": 18,
+    "platea|10|1|I": 81,
+    "platea|10|3|I": 81,
+    "platea|10|5|I": 81,
+    "platea|10|7|I": 81,
+    "platea|10|9|I": 81,
+    "platea|10|11|I": 81,
+    "platea|10|13|I": 81,
+    "platea|10|15|I": 81,
+    "platea|10|17|I": 81,
+    "platea|10|19|I": 81,
+    "platea|11|1|I": 92,
+    "platea|11|3|I": 92,
+    "platea|11|5|I": 92,
+    "platea|11|7|I": 92,
+    "platea|11|9|I": 92,
+    "platea|11|11|I": 92,
+    "platea|11|13|I": 92,
+    "platea|11|15|I": 92,
+    "platea|11|17|I": 92,
+    "platea|11|19|I": 92,
+    "platea|3|26|P": 9,
+    "platea|3|28|P": 9,
+    "platea|3|30|P": 9,
+    "platea|3|32|P": 9,
+    "platea|3|34|P": 9,
+    "platea|3|36|P": 9,
+    "platea|3|38|P": 9,
+    "platea|3|40|P": 9,
+    "platea|13|2|P": 11,
+    "platea|13|4|P": 11,
+    "platea|13|6|P": 11,
+    "platea|13|8|P": 11,
+    "platea|13|10|P": 11,
+    "platea|13|12|P": 11,
+    "platea|13|14|P": 11,
+    "platea|13|16|P": 11,
+    "platea|13|18|P": 11,
+    "platea|13|20|P": 11,
+    "platea|12|1|I": 57,
+    "platea|12|3|I": 57,
+    "platea|12|5|I": 57,
+    "platea|12|7|I": 57,
+    "platea|12|9|I": 57,
+    "platea|12|11|I": 57,
+    "platea|12|13|I": 57,
+    "platea|12|15|I": 57,
+    "platea|12|17|I": 57,
+    "platea|12|19|I": 57,
+    "platea|14|2|P": 3,
+    "platea|14|4|P": 3,
+    "platea|14|6|P": 3,
+    "platea|14|8|P": 3,
+    "platea|14|10|P": 3,
+    "platea|14|12|P": 3,
+    "platea|14|14|P": 3,
+    "platea|14|16|P": 3,
+    "platea|14|18|P": 3,
+    "platea|14|20|P": 3,
+    "platea|14|22|P": 25,
+    "platea|15|2|P": 25,
+    "platea|15|4|P": 25,
+    "platea|15|6|P": 25,
+    "platea|15|8|P": 25,
+    "platea|15|10|P": 25,
+    "platea|15|12|P": 25,
+    "platea|15|14|P": 25,
+    "platea|15|16|P": 25,
+    "platea|15|18|P": 25,
+    "platea|16|2|P": 42,
+    "platea|16|4|P": 42,
+    "platea|16|6|P": 42,
+    "platea|16|8|P": 42,
+    "platea|16|10|P": 42,
+    "platea|16|12|P": 42,
+    "platea|16|14|P": 42,
+    "platea|16|16|P": 42,
+    "platea|16|18|P": 42,
+    "platea|17|2|P": 42,
+    "platea|17|4|P": 134,
+    "platea|17|6|P": 134,
+    "platea|17|8|P": 134,
+    "platea|17|10|P": 134,
+    "platea|17|12|P": 134,
+    "platea|17|14|P": 134,
+    "platea|17|16|P": 134,
+    "platea|18|2|P": 134,
+    "platea|18|4|P": 134,
+    "platea|18|6|P": 134,
+    "platea|4|28|P": 51,
+    "platea|4|30|P": 51,
+    "platea|4|32|P": 51,
+    "platea|4|34|P": 51,
+    "platea|4|36|P": 51,
+    "platea|4|38|P": 51,
+    "platea|4|40|P": 51,
+    "platea|4|42|P": 51,
+    "platea|5|30|P": 51,
+    "platea|5|32|P": 51,
+    "platea|5|34|P": 64,
+    "platea|5|36|P": 64,
+    "platea|5|38|P": 64,
+    "platea|5|40|P": 64,
+    "platea|6|32|P": 64,
+    "platea|6|34|P": 64,
+    "platea|6|36|P": 64,
+    "platea|6|38|P": 64,
+    "platea|7|34|P": 64,
+    "platea|7|36|P": 64,
+    "platea|13|1|I": 66,
+    "platea|13|3|I": 66,
+    "platea|13|5|I": 66,
+    "platea|13|7|I": 66,
+    "platea|13|9|I": 66,
+    "platea|13|11|I": 66,
+    "platea|13|13|I": 66,
+    "platea|13|15|I": 66,
+    "platea|13|17|I": 66,
+    "platea|13|19|I": 66,
+    "platea|13|21|I": 104,
+    "platea|13|23|I": 104,
+    "platea|14|1|I": 104,
+    "platea|14|3|I": 104,
+    "platea|14|5|I": 104,
+    "platea|14|7|I": 104,
+    "platea|14|9|I": 104,
+    "platea|14|11|I": 104,
+    "platea|14|13|I": 104,
+    "platea|14|15|I": 104,
+    "platea|9|22|P": 5,
+    "platea|9|24|P": 5,
+    "platea|9|26|P": 5,
+    "platea|9|28|P": 5,
+    "platea|9|30|P": 5,
+    "platea|10|22|P": 5,
+    "platea|10|24|P": 5,
+    "platea|10|26|P": 5,
+    "platea|11|22|P": 5,
+    "platea|11|24|P": 5,
+    "anf1|5|2|P": 79,
+    "anf1|5|4|P": 79,
+    "anf1|5|6|P": 79,
+    "anf1|5|8|P": 79,
+    "anf1|5|10|P": 79,
+    "anf1|5|12|P": 79,
+    "anf1|5|14|P": 79,
+    "anf1|5|16|P": 79,
+    "anf1|5|18|P": 79,
+    "anf1|5|20|P": 79,
+    "anf1|5|22|P": 95,
+    "anf1|5|24|P": 95,
+    "anf1|5|26|P": 95,
+    "anf1|5|28|P": 95,
+    "anf1|5|30|P": 95,
+    "anf1|5|32|P": 95,
+    "anf1|5|34|P": 95,
+    "anf1|5|36|P": 95,
+    "platea|15|1|I": 125,
+    "platea|15|3|I": 125,
+    "platea|15|5|I": 125,
+    "platea|15|7|I": 125,
+    "platea|15|9|I": 125,
+    "platea|15|11|I": 125,
+    "platea|15|13|I": 125,
+    "platea|15|15|I": 125,
+    "platea|15|17|I": 125,
+    "platea|15|19|I": 125,
+    "anf1|3|2|P": 65,
+    "anf1|3|4|P": 65,
+    "anf1|3|6|P": 65,
+    "anf1|3|8|P": 65,
+    "anf1|3|10|P": 65,
+    "anf1|3|12|P": 65,
+    "anf1|3|14|P": 65,
+    "anf1|3|16|P": 65,
+    "anf1|3|18|P": 65,
+    "anf1|3|20|P": 65,
+    "platea|3|25|I": 59,
+    "platea|3|27|I": 59,
+    "platea|3|29|I": 59,
+    "platea|3|31|I": 59,
+    "platea|3|33|I": 59,
+    "platea|3|35|I": 59,
+    "platea|3|37|I": 59,
+    "platea|3|39|I": 59,
+    "platea|2|31|I": 59,
+    "platea|2|33|I": 59,
+    "platea|16|1|I": 60,
+    "platea|16|3|I": 60,
+    "platea|16|5|I": 60,
+    "platea|16|7|I": 60,
+    "platea|16|9|I": 60,
+    "platea|16|11|I": 60,
+    "platea|16|13|I": 60,
+    "platea|16|15|I": 60,
+    "platea|16|17|I": 60,
+    "platea|17|1|I": 60,
+    "platea|17|3|I": 80,
+    "platea|17|5|I": 80,
+    "platea|17|7|I": 80,
+    "platea|17|9|I": 80,
+    "platea|17|11|I": 80,
+    "platea|17|13|I": 80,
+    "platea|17|15|I": 80,
+    "platea|18|1|I": 80,
+    "platea|18|3|I": 80,
+    "platea|18|5|I": 80,
+    "anf1|4|2|P": 21,
+    "anf1|4|4|P": 21,
+    "anf1|4|6|P": 21,
+    "anf1|4|8|P": 21,
+    "anf1|4|10|P": 21,
+    "anf1|4|12|P": 21,
+    "anf1|4|14|P": 21,
+    "anf1|4|16|P": 21,
+    "anf1|4|18|P": 21,
+    "anf1|4|20|P": 21,
+    "platea|4|27|I": 76,
+    "platea|4|29|I": 76,
+    "platea|4|31|I": 76,
+    "platea|4|33|I": 76,
+    "platea|4|35|I": 76,
+    "platea|4|37|I": 76,
+    "platea|4|39|I": 76,
+    "platea|4|41|I": 76,
+    "platea|5|29|I": 76,
+    "platea|5|31|I": 76,
+    "platea|5|33|I": 90,
+    "platea|5|35|I": 90,
+    "platea|5|37|I": 90,
+    "platea|5|39|I": 90,
+    "platea|7|21|I": 90,
+    "platea|7|23|I": 90,
+    "platea|7|25|I": 90,
+    "platea|7|27|I": 90,
+    "platea|7|29|I": 90,
+    "platea|7|31|I": 90,
+    "platea|8|19|I": 73,
+    "platea|8|21|I": 73,
+    "platea|8|23|I": 73,
+    "platea|8|25|I": 73,
+    "platea|8|27|I": 73,
+    "platea|8|29|I": 73,
+    "platea|8|31|I": 73,
+    "platea|9|21|I": 73,
+    "platea|9|23|I": 73,
+    "platea|9|25|I": 73,
+    "platea|9|27|I": 82,
+    "platea|9|29|I": 82,
+    "platea|10|21|I": 82,
+    "platea|10|23|I": 82,
+    "platea|10|25|I": 82,
+    "platea|10|27|I": 82,
+    "platea|11|21|I": 82,
+    "platea|11|23|I": 82,
+    "platea|11|25|I": 82,
+    "platea|11|27|I": 82,
+    "anf1|6|2|P": 17,
+    "anf1|6|4|P": 17,
+    "anf1|6|6|P": 17,
+    "anf1|6|8|P": 17,
+    "anf1|6|10|P": 17,
+    "anf1|6|12|P": 17,
+    "anf1|6|14|P": 17,
+    "anf1|6|16|P": 17,
+    "anf1|6|18|P": 17,
+    "anf1|6|20|P": 17,
+    "anf1|6|22|P": 105,
+    "anf1|6|24|P": 105,
+    "anf1|6|26|P": 105,
+    "anf1|6|28|P": 105,
+    "anf1|6|30|P": 105,
+    "anf1|6|32|P": 105,
+    "anf1|6|34|P": 105,
+    "anf1|6|36|P": 105,
+    "anf1|6|38|P": 105,
+    "anf1|6|40|P": 105,
+    "anf1|7|2|P": 6,
+    "anf1|7|4|P": 6,
+    "anf1|7|6|P": 6,
+    "anf1|7|8|P": 6,
+    "anf1|7|10|P": 6,
+    "anf1|7|12|P": 6,
+    "anf1|7|14|P": 6,
+    "anf1|7|16|P": 6,
+    "anf1|7|18|P": 6,
+    "anf1|7|20|P": 6,
+    "anf1|7|22|P": 37,
+    "anf1|7|24|P": 37,
+    "anf1|7|26|P": 37,
+    "anf1|7|28|P": 37,
+    "anf1|7|30|P": 37,
+    "anf1|7|32|P": 37,
+    "anf1|7|34|P": 37,
+    "anf1|7|36|P": 37,
+    "anf1|7|38|P": 37,
+    "anf1|7|40|P": 37,
+    "platea|12|22|P": 38,
+    "platea|12|24|P": 38,
+    "platea|12|26|P": 38,
+    "platea|11|26|P": 38,
+    "platea|11|28|P": 38,
+    "platea|10|28|P": 38,
+    "anf1|8|2|P": 16,
+    "anf1|8|4|P": 16,
+    "anf1|8|6|P": 16,
+    "anf1|8|8|P": 16,
+    "anf1|8|10|P": 16,
+    "anf1|8|12|P": 16,
+    "anf1|8|14|P": 16,
+    "anf1|8|16|P": 16,
+    "anf1|8|18|P": 16,
+    "anf1|8|20|P": 16,
+    "anf1|8|22|P": 16,
+    "anf1|8|24|P": 16,
+    "anf1|8|26|P": 26,
+    "anf1|8|28|P": 26,
+    "anf1|8|30|P": 26,
+    "anf1|8|32|P": 26,
+    "anf1|8|34|P": 26,
+    "anf1|8|36|P": 26,
+    "anf1|8|38|P": 26,
+    "anf1|8|40|P": 26,
+    "anf1|8|42|P": 26,
+    "anf1|8|44|P": 26,
+    "anf1|3|1|I": 98,
+    "anf1|3|3|I": 98,
+    "anf1|3|5|I": 98,
+    "anf1|3|7|I": 98,
+    "anf1|3|9|I": 98,
+    "anf1|3|11|I": 98,
+    "anf1|3|13|I": 98,
+    "anf1|3|15|I": 98,
+    "anf1|3|17|I": 98,
+    "anf1|3|19|I": 98,
+    "anf1|5|1|I": 50,
+    "anf1|5|3|I": 50,
+    "anf1|5|5|I": 50,
+    "anf1|5|7|I": 50,
+    "anf1|5|9|I": 50,
+    "anf1|5|11|I": 50,
+    "anf1|5|13|I": 50,
+    "anf1|5|15|I": 50,
+    "anf1|5|17|I": 50,
+    "anf1|5|19|I": 50,
+    "anf1|5|21|I": 63,
+    "anf1|5|23|I": 63,
+    "anf1|5|25|I": 63,
+    "anf1|5|27|I": 63,
+    "anf1|5|29|I": 63,
+    "anf1|5|31|I": 63,
+    "anf1|5|33|I": 63,
+    "anf1|5|35|I": 63,
+    "anf1|5|37|I": 63,
+    "anf1|5|39|I": 63,
+    "anf1|4|1|I": 72,
+    "anf1|4|3|I": 72,
+    "anf1|4|5|I": 72,
+    "anf1|4|7|I": 72,
+    "anf1|4|9|I": 72,
+    "anf1|4|11|I": 72,
+    "anf1|4|13|I": 72,
+    "anf1|4|15|I": 72,
+    "anf1|4|17|I": 72,
+    "anf1|4|19|I": 72,
+    "anf1|6|1|I": 75,
+    "anf1|6|3|I": 75,
+    "anf1|6|5|I": 75,
+    "anf1|6|7|I": 75,
+    "anf1|6|9|I": 75,
+    "anf1|6|11|I": 75,
+    "anf1|6|13|I": 75,
+    "anf1|6|15|I": 75,
+    "anf1|6|17|I": 75,
+    "anf1|6|19|I": 75,
+    "anf1|9|2|P": 2,
+    "anf1|9|4|P": 2,
+    "anf1|9|6|P": 2,
+    "anf1|9|8|P": 2,
+    "anf1|9|10|P": 2,
+    "anf1|9|12|P": 2,
+    "anf1|9|14|P": 2,
+    "anf1|9|16|P": 2,
+    "anf1|9|18|P": 2,
+    "anf1|9|20|P": 2,
+    "anf1|6|21|I": 58,
+    "anf1|6|23|I": 58,
+    "anf1|6|25|I": 58,
+    "anf1|6|27|I": 58,
+    "anf1|6|29|I": 58,
+    "anf1|6|31|I": 58,
+    "anf1|6|33|I": 58,
+    "anf1|6|35|I": 58,
+    "anf1|6|37|I": 58,
+    "anf1|6|39|I": 58,
+    "anf1|1|2|P": 23,
+    "anf1|1|4|P": 23,
+    "anf1|1|6|P": 23,
+    "anf1|1|8|P": 23,
+    "anf1|1|10|P": 23,
+    "anf1|1|12|P": 23,
+    "anf1|1|14|P": 23,
+    "anf1|9|22|P": 43,
+    "anf1|9|24|P": 43,
+    "anf1|9|26|P": 43,
+    "anf1|9|28|P": 43,
+    "anf1|9|30|P": 43,
+    "anf1|9|32|P": 43,
+    "anf1|9|34|P": 43,
+    "anf1|9|36|P": 43,
+    "anf1|9|38|P": 43,
+    "anf1|9|40|P": 43,
+    "anf1|7|1|I": 110,
+    "anf1|7|3|I": 110,
+    "anf1|7|5|I": 110,
+    "anf1|7|7|I": 110,
+    "anf1|7|9|I": 110,
+    "anf1|7|11|I": 110,
+    "anf1|7|13|I": 110,
+    "anf1|7|15|I": 110,
+    "anf1|7|17|I": 110,
+    "anf1|7|19|I": 110,
+    "anf1|10|2|P": 44,
+    "anf1|10|4|P": 44,
+    "anf1|10|6|P": 44,
+    "anf1|10|8|P": 44,
+    "anf1|10|10|P": 44,
+    "anf1|10|12|P": 44,
+    "anf1|10|14|P": 44,
+    "anf1|10|16|P": 44,
+    "anf1|10|18|P": 44,
+    "anf1|10|20|P": 44,
+    "anf1|2|2|P": 13,
+    "anf1|2|4|P": 13,
+    "anf1|2|6|P": 13,
+    "anf1|2|8|P": 13,
+    "anf1|2|10|P": 13,
+    "anf1|2|12|P": 13,
+    "anf1|2|14|P": 13,
+    "anf1|8|1|I": 99,
+    "anf1|8|3|I": 99,
+    "anf1|8|5|I": 99,
+    "anf1|8|7|I": 99,
+    "anf1|8|9|I": 99,
+    "anf1|8|11|I": 99,
+    "anf1|8|13|I": 99,
+    "anf1|8|15|I": 99,
+    "anf1|8|17|I": 99,
+    "anf1|8|19|I": 99,
+    "anf1|8|21|I": 100,
+    "anf1|8|23|I": 100,
+    "anf1|8|25|I": 100,
+    "anf1|8|27|I": 100,
+    "anf1|8|29|I": 100,
+    "anf1|8|31|I": 100,
+    "anf1|8|33|I": 100,
+    "anf1|8|35|I": 100,
+    "anf1|8|37|I": 100,
+    "anf1|8|39|I": 100,
+    "anf1|7|21|I": 77,
+    "anf1|7|23|I": 77,
+    "anf1|7|25|I": 77,
+    "anf1|7|27|I": 77,
+    "anf1|7|29|I": 77,
+    "anf1|7|31|I": 77,
+    "anf1|7|33|I": 77,
+    "anf1|7|35|I": 77,
+    "anf1|7|37|I": 77,
+    "anf1|7|39|I": 77,
+    "anf1|9|1|I": 126,
+    "anf1|9|3|I": 126,
+    "anf1|9|5|I": 126,
+    "anf1|9|7|I": 126,
+    "anf1|9|9|I": 126,
+    "anf1|9|11|I": 126,
+    "anf1|9|13|I": 126,
+    "anf1|9|15|I": 126,
+    "anf1|9|17|I": 126,
+    "anf1|9|19|I": 126,
+    "anf1|9|21|I": 120,
+    "anf1|9|23|I": 120,
+    "anf1|9|25|I": 120,
+    "anf1|9|27|I": 120,
+    "anf1|9|29|I": 120,
+    "anf1|9|31|I": 120,
+    "anf1|9|33|I": 120,
+    "anf1|9|35|I": 120,
+    "anf1|9|37|I": 120,
+    "anf1|9|39|I": 120,
+    "anf1|10|22|P": 107,
+    "anf1|10|24|P": 107,
+    "anf1|10|26|P": 107,
+    "anf1|10|28|P": 107,
+    "anf1|10|30|P": 107,
+    "anf1|10|32|P": 107,
+    "anf1|10|34|P": 107,
+    "anf1|10|36|P": 107,
+    "anf1|10|38|P": 107,
+    "anf1|10|40|P": 107,
+    "anf1|10|1|I": 135,
+    "anf1|10|3|I": 135,
+    "anf1|10|5|I": 135,
+    "anf1|10|7|I": 135,
+    "anf1|10|9|I": 135,
+    "anf1|10|11|I": 135,
+    "anf1|10|13|I": 135,
+    "anf1|10|15|I": 135,
+    "anf1|10|17|I": 135,
+    "anf1|10|19|I": 135,
+    "anf1|11|2|P": 27,
+    "anf1|11|4|P": 27,
+    "anf1|11|6|P": 27,
+    "anf1|11|8|P": 27,
+    "anf1|11|10|P": 27,
+    "anf1|11|12|P": 27,
+    "anf1|11|14|P": 27,
+    "anf1|11|16|P": 27,
+    "anf1|11|18|P": 27,
+    "anf1|11|20|P": 27,
+    "anf1|11|22|P": 14,
+    "anf1|11|24|P": 14,
+    "anf1|11|26|P": 14,
+    "anf1|11|28|P": 14,
+    "anf1|11|30|P": 14,
+    "anf1|11|32|P": 14,
+    "anf1|11|34|P": 14,
+    "anf1|11|36|P": 14,
+    "anf1|11|38|P": 14,
+    "anf1|11|40|P": 14,
+    "anf1|10|21|I": 68,
+    "anf1|10|23|I": 68,
+    "anf1|10|25|I": 68,
+    "anf1|10|27|I": 68,
+    "anf1|10|29|I": 68,
+    "anf1|10|31|I": 68,
+    "anf1|10|33|I": 68,
+    "anf1|10|35|I": 68,
+    "anf1|10|37|I": 68,
+    "anf1|10|39|I": 68,
+    "anf1|11|1|I": 103,
+    "anf1|11|3|I": 103,
+    "anf1|11|5|I": 103,
+    "anf1|11|7|I": 103,
+    "anf1|11|9|I": 103,
+    "anf1|11|11|I": 103,
+    "anf1|11|13|I": 103,
+    "anf1|11|15|I": 103,
+    "anf1|11|17|I": 103,
+    "anf1|11|19|I": 103,
+    "anf1|11|21|I": 47,
+    "anf1|11|23|I": 47,
+    "anf1|11|25|I": 47,
+    "anf1|11|27|I": 47,
+    "anf1|11|29|I": 47,
+    "anf1|11|31|I": 47,
+    "anf1|11|33|I": 47,
+    "anf1|11|35|I": 47,
+    "anf1|11|37|I": 47,
+    "anf1|11|39|I": 47,
+    "anf1|12|2|P": 4,
+    "anf1|12|4|P": 4,
+    "anf1|12|6|P": 4,
+    "anf1|12|8|P": 4,
+    "anf1|12|10|P": 4,
+    "anf1|12|12|P": 4,
+    "anf1|12|14|P": 4,
+    "anf1|12|16|P": 4,
+    "anf1|12|18|P": 4,
+    "anf1|12|20|P": 4,
+    "anf1|12|22|P": 22,
+    "anf1|12|24|P": 22,
+    "anf1|12|26|P": 22,
+    "anf1|12|28|P": 22,
+    "anf1|12|30|P": 22,
+    "anf1|12|32|P": 22,
+    "anf1|12|34|P": 22,
+    "anf1|12|36|P": 22,
+    "anf1|12|38|P": 22,
+    "anf1|12|40|P": 22,
+    "anf1|13|2|P": 30,
+    "anf1|13|4|P": 30,
+    "anf1|13|6|P": 30,
+    "anf1|13|8|P": 30,
+    "anf1|13|10|P": 30,
+    "anf1|13|12|P": 30,
+    "anf1|13|14|P": 30,
+    "anf1|13|44|P": 30,
+    "anf1|13|46|P": 30,
+    "anf1|13|48|P": 30,
+    "anf1|12|9|I": 71,
+    "anf1|12|11|I": 71,
+    "anf1|12|13|I": 71,
+    "anf1|12|15|I": 71,
+    "anf1|12|17|I": 71,
+    "anf1|12|19|I": 71,
+    "anf1|12|21|I": 71,
+    "anf1|12|23|I": 71,
+    "anf1|12|25|I": 71,
+    "anf1|12|27|I": 71,
+    "anf1|12|29|I": 49,
+    "anf1|12|31|I": 49,
+    "anf1|12|33|I": 49,
+    "anf1|12|35|I": 49,
+    "anf1|12|37|I": 49,
+    "anf1|12|39|I": 49,
+    "anf1|12|41|I": 49,
+    "anf1|12|43|I": 49,
+    "anf1|12|45|I": 49,
+    "anf1|12|47|I": 49,
+    "anf1|14|2|P": 7,
+    "anf1|14|4|P": 7,
+    "anf1|14|6|P": 7,
+    "anf1|14|8|P": 7,
+    "anf1|14|10|P": 7,
+    "anf1|14|22|P": 7,
+    "anf1|14|24|P": 7,
+    "anf1|14|26|P": 7,
+    "anf1|14|28|P": 7,
+    "anf1|14|30|P": 7,
+    "anf1|13|21|I": 89,
+    "anf1|13|23|I": 89,
+    "anf1|13|25|I": 89,
+    "anf1|13|27|I": 89,
+    "anf1|13|29|I": 89,
+    "anf1|13|31|I": 89,
+    "anf1|13|33|I": 89,
+    "anf1|13|35|I": 89,
+    "anf1|13|37|I": 89,
+    "anf1|13|39|I": 89,
+    "anf1|14|1|I": 127,
+    "anf1|14|3|I": 127,
+    "anf1|14|5|I": 127,
+    "anf1|14|7|I": 127,
+    "anf1|14|9|I": 127,
+    "anf1|14|11|I": 127,
+    "anf1|14|13|I": 127,
+    "anf1|14|15|I": 127,
+    "anf1|14|17|I": 127,
+    "anf1|14|19|I": 127,
+    "anf1|1|1|I": 70,
+    "anf1|1|3|I": 70,
+    "anf1|1|5|I": 70,
+    "anf1|1|7|I": 70,
+    "anf1|1|9|I": 70,
+    "anf1|1|11|I": 70,
+    "anf1|1|13|I": 70,
+    "anf1|2|1|I": 70,
+    "anf1|2|3|I": 70,
+    "anf1|2|5|I": 70,
+    "anf1|7|42|P": 108,
+    "anf1|7|44|P": 108,
+    "anf1|7|46|P": 108,
+    "anf1|7|48|P": 108,
+    "anf1|7|50|P": 108,
+    "anf1|7|52|P": 108,
+    "anf1|7|54|P": 108,
+    "anf1|7|56|P": 108,
+    "anf1|6|42|P": 108,
+    "anf1|6|44|P": 108,
+    "anf1|7|41|I": 69,
+    "anf1|7|43|I": 69,
+    "anf1|7|45|I": 69,
+    "anf1|7|47|I": 69,
+    "anf1|7|49|I": 69,
+    "anf1|7|51|I": 69,
+    "anf1|7|53|I": 69,
+    "anf1|7|55|I": 69,
+    "anf1|6|41|I": 69,
+    "anf1|6|43|I": 69,
+    "anf1|9|42|P": 39,
+    "anf1|9|44|P": 39,
+    "anf1|9|46|P": 39,
+    "anf1|9|48|P": 39,
+    "anf1|9|50|P": 39,
+    "anf1|9|52|P": 39,
+    "anf1|9|54|P": 39,
+    "anf1|9|56|P": 39,
+    "anf1|8|46|P": 39,
+    "anf1|8|48|P": 39,
+    "anf1|8|41|I": 61,
+    "anf1|8|43|I": 61,
+    "anf1|8|45|I": 61,
+    "anf1|8|47|I": 61,
+    "anf1|8|49|I": 61,
+    "anf1|8|51|I": 61,
+    "anf1|8|53|I": 61,
+    "anf1|8|55|I": 61,
+    "anf1|9|41|I": 130,
+    "anf1|9|43|I": 130,
+    "anf1|9|45|I": 130,
+    "anf1|9|47|I": 130,
+    "anf1|9|49|I": 130,
+    "anf1|9|51|I": 130,
+    "anf1|9|53|I": 130,
+    "anf1|9|55|I": 130,
+    "anf1|10|41|I": 130,
+    "anf1|10|43|I": 130,
+    "platea|6|31|I": 74,
+    "platea|6|33|I": 74,
+    "platea|6|35|I": 74,
+    "platea|6|37|I": 74,
+    "anf1|11|41|I": 124,
+    "anf1|11|43|I": 124,
+    "anf1|11|45|I": 124,
+    "anf1|11|47|I": 124,
+    "anf1|11|49|I": 124,
+    "anf1|11|51|I": 124,
+    "anf1|11|53|I": 124,
+    "anf1|11|55|I": 124,
+    "anf1|10|45|I": 124,
+    "anf1|10|47|I": 124,
+    "anf1|14|21|I": 94,
+    "anf1|14|23|I": 94,
+    "anf1|14|25|I": 94,
+    "anf1|14|27|I": 94,
+    "anf1|14|29|I": 94,
+    "anf1|14|31|I": 94,
+    "anf1|14|33|I": 94,
+    "anf1|14|35|I": 94,
+    "anf1|13|41|I": 94,
+    "anf1|13|43|I": 94,
+    "anf1|11|42|P": 85,
+    "anf1|11|44|P": 85,
+    "anf1|11|46|P": 85,
+    "anf1|11|48|P": 85,
+    "anf1|11|50|P": 85,
+    "anf1|11|52|P": 85,
+    "anf1|11|54|P": 85,
+    "anf1|11|56|P": 85,
+    "anf1|11|58|P": 85,
+    "anf1|10|42|P": 85,
+    "anf1|10|44|P": 86,
+    "anf1|10|46|P": 86,
+    "anf1|10|48|P": 86,
+    "anf1|10|50|P": 86,
+    "anf1|10|52|P": 86,
+    "anf1|10|54|P": 86,
+    "anf1|10|56|P": 86,
+    "anf1|12|42|P": 86,
+    "anf1|12|44|P": 86,
+    "anf1|12|46|P": 86,
+    "anf1|2|7|I": 54,
+    "anf1|2|9|I": 54,
+    "anf1|2|11|I": 54,
+    "anf1|2|13|I": 54,
+    "anf1|3|21|I": 54,
+    "anf1|3|23|I": 54,
+    "anf1|3|25|I": 54,
+    "anf1|3|27|I": 54,
+    "anf1|4|21|I": 54,
+    "anf1|4|23|I": 54,
+    "anf1|15|2|P": 32,
+    "anf1|15|4|P": 32,
+    "anf1|15|6|P": 32,
+    "anf1|15|8|P": 32,
+    "anf1|15|10|P": 32,
+    "anf1|15|12|P": 32,
+    "anf1|15|14|P": 32,
+    "anf1|14|32|P": 32,
+    "anf1|14|34|P": 32,
+    "anf1|14|36|P": 32,
+    "anf1|3|22|P": 10,
+    "anf1|3|24|P": 10,
+    "anf1|3|26|P": 10,
+    "anf1|3|28|P": 10,
+    "anf1|4|22|P": 10,
+    "anf1|4|24|P": 10,
+    "anf1|4|26|P": 10,
+    "anf1|4|28|P": 10,
+    "anf1|5|38|P": 10,
+    "anf1|5|40|P": 10,
+    "anf2|1|2|P": 93,
+    "anf2|1|4|P": 93,
+    "anf2|1|6|P": 93,
+    "anf2|1|8|P": 93,
+    "anf2|1|10|P": 93,
+    "anf2|1|12|P": 93,
+    "anf2|1|14|P": 93,
+    "anf2|1|16|P": 93,
+    "anf2|1|18|P": 93,
+    "anf2|1|20|P": 93,
+    "anf2|1|22|P": 111,
+    "anf2|1|24|P": 111,
+    "anf2|1|26|P": 111,
+    "anf2|1|28|P": 111,
+    "anf2|1|30|P": 111,
+    "anf2|1|32|P": 111,
+    "anf2|1|34|P": 111,
+    "anf2|1|36|P": 111,
+    "anf2|1|38|P": 111,
+    "anf2|1|40|P": 111,
+    "anf1|13|45|I": 112,
+    "anf1|13|47|I": 112,
+    "anf1|13|49|I": 112,
+    "anf1|13|51|I": 112,
+    "anf1|13|53|I": 112,
+    "anf1|10|49|I": 112,
+    "anf1|10|51|I": 112,
+    "anf1|10|53|I": 112,
+    "anf1|12|49|I": 112,
+    "anf1|12|51|I": 112,
+    "anf2|1|1|I": 114,
+    "anf2|1|3|I": 114,
+    "anf2|1|5|I": 114,
+    "anf2|1|7|I": 114,
+    "anf2|1|9|I": 114,
+    "anf2|1|11|I": 114,
+    "anf2|1|13|I": 114,
+    "anf2|1|15|I": 114,
+    "anf2|1|17|I": 114,
+    "anf2|1|19|I": 114,
+    "anf2|2|2|P": 87,
+    "anf2|2|4|P": 87,
+    "anf2|2|6|P": 87,
+    "anf2|2|8|P": 87,
+    "anf2|2|10|P": 87,
+    "anf2|2|12|P": 87,
+    "anf2|2|14|P": 87,
+    "anf2|2|16|P": 87,
+    "anf2|2|18|P": 87,
+    "anf2|2|20|P": 87,
+    "anf2|1|21|I": 117,
+    "anf2|1|23|I": 117,
+    "anf2|1|25|I": 117,
+    "anf2|1|27|I": 117,
+    "anf2|1|29|I": 117,
+    "anf2|1|31|I": 117,
+    "anf2|1|33|I": 117,
+    "anf2|1|35|I": 117,
+    "platea|18|8|P": 29,
+    "platea|18|10|P": 29,
+    "platea|18|12|P": 29,
+    "platea|18|14|P": 29,
+    "anf1|6|45|I": 83,
+    "anf1|6|47|I": 83,
+    "anf1|6|49|I": 83,
+    "anf1|6|51|I": 83,
+    "anf1|6|53|I": 83,
+    "anf2|2|1|I": 55,
+    "anf2|2|3|I": 55,
+    "anf2|2|5|I": 55,
+    "anf2|2|7|I": 55,
+    "anf2|2|9|I": 55,
+    "anf2|2|11|I": 55,
+    "anf2|2|13|I": 55,
+    "anf2|2|15|I": 55,
+    "anf2|2|17|I": 55,
+    "anf2|2|19|I": 55,
+    "anf2|3|1|I": 53,
+    "anf2|3|3|I": 53,
+    "anf2|3|5|I": 53,
+    "anf2|3|7|I": 53,
+    "anf2|3|9|I": 53,
+    "anf2|3|11|I": 53,
+    "anf2|3|13|I": 53,
+    "anf2|3|15|I": 53,
+    "anf2|3|17|I": 53,
+    "anf2|3|19|I": 53,
+    "anf2|4|1|I": 113,
+    "anf2|4|3|I": 113,
+    "anf2|4|5|I": 113,
+    "anf2|4|7|I": 113,
+    "anf2|4|9|I": 113,
+    "anf2|4|11|I": 113,
+    "anf2|4|13|I": 113,
+    "anf2|4|15|I": 113,
+    "anf2|4|17|I": 113,
+    "anf2|4|19|I": 113,
+    "anf2|5|1|I": 101,
+    "anf2|5|3|I": 101,
+    "anf2|5|5|I": 101,
+    "anf2|5|7|I": 101,
+    "anf2|5|9|I": 101,
+    "anf2|5|11|I": 101,
+    "anf2|5|13|I": 101,
+    "anf2|5|15|I": 101,
+    "anf2|5|17|I": 101,
+    "anf2|5|19|I": 101,
+    "anf2|2|22|P": 28,
+    "anf2|2|24|P": 28,
+    "anf2|2|26|P": 28,
+    "anf2|2|28|P": 28,
+    "anf2|2|30|P": 28,
+    "anf2|2|32|P": 28,
+    "anf2|2|34|P": 28,
+    "anf2|2|36|P": 28,
+    "anf2|2|38|P": 28,
+    "anf2|6|1|I": 129,
+    "anf2|6|3|I": 129,
+    "anf2|6|5|I": 129,
+    "anf2|6|7|I": 129,
+    "anf2|6|9|I": 129,
+    "anf2|6|11|I": 129,
+    "anf2|6|13|I": 129,
+    "anf2|6|15|I": 129,
+    "anf2|6|17|I": 129,
+    "anf2|6|19|I": 129,
+    "anf2|3|2|P": 41,
+    "anf2|3|4|P": 41,
+    "anf2|3|6|P": 41,
+    "anf2|3|8|P": 41,
+    "anf2|3|10|P": 41,
+    "anf2|3|12|P": 41,
+    "anf2|3|14|P": 41,
+    "anf2|3|16|P": 41,
+    "anf2|3|18|P": 41,
+    "anf2|3|20|P": 41,
+    "anf2|4|2|P": 106,
+    "anf2|4|4|P": 106,
+    "anf2|4|6|P": 106,
+    "anf2|4|8|P": 106,
+    "anf2|4|10|P": 106,
+    "anf2|4|12|P": 106,
+    "anf2|4|14|P": 106,
+    "anf2|4|16|P": 106,
+    "anf2|4|18|P": 106,
+    "anf2|4|20|P": 106,
+    "platea|2|35|I": 102,
+    "platea|2|37|I": 102,
+    "anf2|2|21|I": 133,
+    "anf2|2|23|I": 133,
+    "anf2|2|25|I": 133,
+    "anf2|2|27|I": 133,
+    "anf2|2|29|I": 133,
+    "anf2|2|31|I": 133,
+    "anf2|2|33|I": 133,
+    "anf2|2|35|I": 133,
+    "anf2|7|1|I": 122,
+    "anf2|7|3|I": 122,
+    "anf2|7|5|I": 122,
+    "anf2|7|7|I": 122,
+    "anf2|7|9|I": 122,
+    "anf2|7|11|I": 122,
+    "anf2|7|13|I": 122,
+    "anf2|7|15|I": 122,
+    "anf2|7|17|I": 122,
+    "anf2|7|19|I": 122,
+    "anf2|5|2|P": 31,
+    "anf2|5|4|P": 31,
+    "anf2|5|6|P": 31,
+    "anf2|5|8|P": 31,
+    "anf2|5|10|P": 31,
+    "anf2|5|12|P": 31,
+    "anf2|5|14|P": 31,
+    "anf2|5|16|P": 31,
+    "anf2|5|18|P": 31,
+    "anf2|5|20|P": 31,
+    "anf1|15|1|I": 88,
+    "anf1|15|3|I": 88,
+    "anf1|15|5|I": 88,
+    "anf1|15|7|I": 88,
+    "anf1|15|9|I": 88,
+    "anf2|8|1|I": 52,
+    "anf2|8|3|I": 52,
+    "anf2|8|5|I": 52,
+    "anf2|8|7|I": 52,
+    "anf2|8|9|I": 52,
+    "anf2|8|11|I": 52,
+    "anf2|8|13|I": 52,
+    "anf2|8|15|I": 52,
+    "anf2|8|17|I": 52,
+    "anf2|8|19|I": 52,
+    "anf2|11|1|I": 96,
+    "anf2|11|3|I": 96,
+    "anf2|11|5|I": 96,
+    "anf2|11|7|I": 96,
+    "anf2|11|9|I": 96,
+    "anf2|11|11|I": 96,
+    "anf2|11|13|I": 96,
+    "anf2|11|15|I": 96,
+    "anf2|11|17|I": 96,
+    "anf2|11|19|I": 96,
+    "anf2|11|21|I": 128,
+    "anf2|12|1|I": 128,
+    "anf2|12|3|I": 128,
+    "anf2|12|5|I": 128,
+    "anf2|12|7|I": 128,
+    "anf2|12|9|I": 128,
+    "anf2|12|11|I": 128,
+    "anf2|12|13|I": 128,
+    "anf2|12|15|I": 128,
+    "anf2|12|17|I": 128,
+    "anf2|9|1|I": 123,
+    "anf2|9|3|I": 123,
+    "anf2|9|5|I": 123,
+    "anf2|9|7|I": 123,
+    "anf2|9|9|I": 123,
+    "anf2|9|11|I": 123,
+    "anf2|9|13|I": 123,
+    "anf2|9|15|I": 123,
+    "anf2|9|17|I": 123,
+    "anf2|9|19|I": 123,
+    "anf2|3|21|I": 115,
+    "anf2|3|23|I": 115,
+    "anf2|3|25|I": 115,
+    "anf2|3|27|I": 115,
+    "anf2|3|29|I": 115,
+    "anf2|3|31|I": 115,
+    "anf2|3|33|I": 115,
+    "anf2|3|35|I": 115,
+    "anf2|4|21|I": 115,
+    "anf2|4|23|I": 115,
+    "anf2|6|2|P": 35,
+    "anf2|6|4|P": 35,
+    "anf2|6|6|P": 35,
+    "anf2|6|8|P": 35,
+    "anf2|6|10|P": 35,
+    "anf2|6|12|P": 35,
+    "anf2|6|14|P": 35,
+    "anf2|6|16|P": 35,
+    "anf2|6|18|P": 35,
+    "anf2|6|20|P": 35,
+    "anf2|7|2|P": 33,
+    "anf2|7|4|P": 33,
+    "anf2|7|6|P": 33,
+    "anf2|7|8|P": 33,
+    "anf2|7|10|P": 33,
+    "anf2|7|12|P": 33,
+    "anf2|7|14|P": 33,
+    "anf2|7|16|P": 33,
+    "anf2|7|18|P": 33,
+    "anf2|7|20|P": 33,
+    "anf2|8|2|P": 34,
+    "anf2|8|4|P": 34,
+    "anf2|8|6|P": 34,
+    "anf2|8|8|P": 34,
+    "anf2|8|10|P": 34,
+    "anf2|8|12|P": 34,
+    "anf2|8|14|P": 34,
+    "anf2|8|16|P": 34,
+    "anf2|8|18|P": 34,
+    "anf2|8|20|P": 34,
+    "anf2|9|2|P": 36,
+    "anf2|9|4|P": 36,
+    "anf2|9|6|P": 36,
+    "anf2|9|8|P": 36,
+    "anf2|9|10|P": 36,
+    "anf2|9|12|P": 36,
+    "anf2|9|14|P": 36,
+    "anf2|9|16|P": 36,
+    "anf2|9|18|P": 36,
+    "anf2|9|20|P": 36,
+    "anf2|11|2|P": 8,
+    "anf2|11|4|P": 8,
+    "anf2|11|6|P": 8,
+    "anf2|11|8|P": 8,
+    "anf2|11|10|P": 8,
+    "anf2|11|12|P": 8,
+    "anf2|11|14|P": 8,
+    "anf2|11|16|P": 8,
+    "anf2|11|18|P": 8,
+    "anf2|11|20|P": 8,
+    "anf2|12|2|P": 40,
+    "anf2|12|4|P": 40,
+    "anf2|12|6|P": 40,
+    "anf2|12|8|P": 40,
+    "anf2|12|10|P": 40,
+    "anf2|12|12|P": 40,
+    "anf2|12|14|P": 40,
+    "anf2|12|16|P": 40,
+    "anf2|12|18|P": 40,
+    "anf2|12|20|P": 40,
+    "anf2|5|21|I": 46,
+    "anf2|5|23|I": 46,
+    "anf2|5|25|I": 46,
+    "anf2|5|27|I": 46,
+    "anf2|5|29|I": 46,
+    "anf2|5|31|I": 46,
+    "anf2|4|25|I": 46,
+    "anf2|4|27|I": 46,
+    "anf2|4|29|I": 46,
+    "anf2|4|31|I": 46,
+    "anf2|6|21|I": 48,
+    "anf2|6|23|I": 48,
+    "anf2|6|25|I": 48,
+    "anf2|6|27|I": 48,
+    "anf2|6|29|I": 48,
+    "anf2|7|21|I": 48,
+    "anf2|7|23|I": 48,
+    "anf2|7|25|I": 48,
+    "anf2|8|21|I": 48,
+    "anf2|8|23|I": 48,
+    "anf2|10|1|I": 67,
+    "anf2|10|3|I": 67,
+    "anf2|10|5|I": 67,
+    "anf2|10|7|I": 67,
+    "anf2|10|9|I": 67,
+    "anf2|10|11|I": 67,
+    "anf2|10|13|I": 67,
+    "anf2|9|21|I": 67,
+    "anf2|9|23|I": 67,
+    "anf2|8|25|I": 67,
+    "galeria|1|1|I": 91,
+    "galeria|1|3|I": 91,
+    "galeria|1|5|I": 91,
+    "galeria|1|7|I": 91,
+    "galeria|1|9|I": 91,
+    "galeria|1|11|I": 91,
+    "galeria|1|13|I": 91,
+    "galeria|1|15|I": 91,
+    "galeria|1|17|I": 91,
+    "galeria|1|19|I": 91,
+    "galeria|1|21|I": 97,
+    "galeria|1|23|I": 97,
+    "galeria|1|25|I": 97,
+    "galeria|1|27|I": 97,
+    "galeria|1|29|I": 97,
+    "galeria|1|31|I": 97,
+    "galeria|1|33|I": 97,
+    "galeria|1|35|I": 97,
+    "galeria|1|37|I": 97,
+    "galeria|1|39|I": 97,
+    "anf2|3|22|P": 118,
+    "anf2|3|24|P": 118,
+    "anf2|3|26|P": 118,
+    "anf2|3|28|P": 118,
+    "anf2|3|30|P": 118,
+    "anf2|3|32|P": 118,
+    "anf2|3|34|P": 118,
+    "anf2|3|36|P": 118,
+    "anf2|4|22|P": 118,
+    "anf2|4|24|P": 118,
+    "anf2|5|22|P": 121,
+    "anf2|5|24|P": 121,
+    "anf2|5|26|P": 121,
+    "anf2|5|28|P": 121,
+    "anf2|5|30|P": 121,
+    "anf2|5|32|P": 121,
+    "anf2|4|26|P": 121,
+    "anf2|4|28|P": 121,
+    "anf2|4|30|P": 121,
+    "anf2|4|32|P": 121
+  },
   "nextId": 171
 }
