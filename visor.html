@@ -217,17 +217,51 @@ function makeSplitRow(rowDef, showPalcoGap = false) {
     return arr.slice(s, e + 1);
   };
 
-  const rnClass = (rowDef.zone === 'anf2' && !rowDef.seats.some(s => s.section === 'cen-par')) ? 'row-num row-num-light' : 'row-num';
+  const parTrimmed = trimAisles(parSeats);
+  const impTrimmed = trimAisles(impSeats);
+
+  const hasCen = rowDef.seats.some(s => s.section === 'cen-par');
+  const rnClass = (rowDef.zone === 'anf2' && !hasCen) ? 'row-num row-num-light' : 'row-num';
+  const rlClass = rnClass.replace('num', 'lbl');
   const rn = el('div', rnClass); rn.textContent = rowDef.row; wrapper.appendChild(rn);
 
   const parSide = el('div', 'split-side split-par');
-  trimAisles(parSeats).forEach(s => {
-    if (s.aisle) { 
-      const aisleEl = el('div', s.label ? 'aisle aisle-label' : 'aisle');
-      if (s.label) aisleEl.textContent = s.label; parSide.appendChild(aisleEl); return; 
-    }
-    parSide.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef));
-  });
+
+  if (rowDef.zone === 'anf1') {
+    const secMap = {};
+    parTrimmed.forEach(s => {
+      if (s.aisle) return;
+      const sec = s.section || 'cen-par';
+      if (!secMap[sec]) secMap[sec] = [];
+      secMap[sec].push(s);
+    });
+
+    const hasLatExt = (secMap['lat-par-ext'] || []).length > 0;
+    const hasLatInt = (secMap['lat-par-int'] || []).length > 0;
+    const hasCenPar = (secMap['cen-par']     || []).length > 0;
+
+    const grpE = el('div', 'sec-group-lat-ext-par');
+    (secMap['lat-par-ext'] || []).forEach(s => grpE.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef)));
+    parSide.appendChild(grpE);
+    parSide.appendChild(el('div', 'sec-spacer-wide'));
+    const grpI = el('div', 'sec-group-lat-int');
+    (secMap['lat-par-int'] || []).forEach(s => grpI.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef)));
+    parSide.appendChild(grpI);
+    if ((secMap['cen-par']||[]).length > 0 && ((secMap['lat-par-int']||[]).length > 0 || (secMap['lat-par-ext']||[]).length > 0)) {
+      const a = el('div', 'aisle aisle-label sec-spacer'); a.textContent = rowDef.row; parSide.appendChild(a);
+    } else { parSide.appendChild(el('div', 'sec-spacer')); }
+    const grpC = el('div', 'sec-group-cen-par');
+    (secMap['cen-par'] || []).forEach(s => grpC.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef)));
+    parSide.appendChild(grpC);
+  } else {
+    parTrimmed.forEach(s => {
+      if (s.aisle) {
+        const a = el('div', s.label ? 'aisle aisle-label' : 'aisle');
+        if (s.label) a.textContent = s.label; parSide.appendChild(a); return;
+      }
+      parSide.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef));
+    });
+  }
   wrapper.appendChild(parSide);
 
   const gap = el('div', showPalcoGap && rowDef.row === 8 ? 'split-gap split-gap-palco' : 'split-gap');
@@ -235,16 +269,45 @@ function makeSplitRow(rowDef, showPalcoGap = false) {
   wrapper.appendChild(gap);
 
   const impSide = el('div', 'split-side split-imp');
-  trimAisles(impSeats).forEach(s => {
-    if (s.aisle) { 
-      const aisleEl = el('div', s.label ? 'aisle aisle-label' : 'aisle');
-      if (s.label) aisleEl.textContent = s.label; impSide.appendChild(aisleEl); return; 
-    }
-    impSide.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef));
-  });
+
+  if (rowDef.zone === 'anf1') {
+    const secMap = {};
+    impTrimmed.forEach(s => {
+      if (s.aisle) return;
+      const sec = s.section || 'cen-imp';
+      if (!secMap[sec]) secMap[sec] = [];
+      secMap[sec].push(s);
+    });
+
+    const hasLatExtI = (secMap['lat-imp-ext'] || []).length > 0;
+    const hasLatIntI = (secMap['lat-imp-int'] || []).length > 0;
+    const hasCenImp  = (secMap['cen-imp']     || []).length > 0;
+
+    const grpCI = el('div', 'sec-group-cen-imp');
+    (secMap['cen-imp'] || []).forEach(s => grpCI.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef)));
+    impSide.appendChild(grpCI);
+    if ((secMap['cen-imp']||[]).length > 0 && ((secMap['lat-imp-int']||[]).length > 0 || (secMap['lat-imp-ext']||[]).length > 0)) {
+      const a = el('div', 'aisle aisle-label sec-spacer'); a.textContent = rowDef.row; impSide.appendChild(a);
+    } else { impSide.appendChild(el('div', 'sec-spacer')); }
+    const grpII = el('div', 'sec-group-lat-int');
+    (secMap['lat-imp-int'] || []).forEach(s => grpII.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef)));
+    impSide.appendChild(grpII);
+    impSide.appendChild(el('div', 'sec-spacer-wide'));
+    const grpEI = el('div', 'sec-group-lat-ext-imp');
+    (secMap['lat-imp-ext'] || []).forEach(s => grpEI.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef)));
+    impSide.appendChild(grpEI);
+  } else {
+    impTrimmed.forEach(s => {
+      if (s.aisle) {
+        const a = el('div', s.label ? 'aisle aisle-label' : 'aisle');
+        if (s.label) a.textContent = s.label; impSide.appendChild(a); return;
+      }
+      impSide.appendChild(rowDef.blocked ? el('div','seat blocked') : makeSeat(s, rowDef));
+    });
+  }
   wrapper.appendChild(impSide);
 
-  const rl = el('div', rnClass.replace('num', 'lbl')); rl.textContent = rowDef.row; wrapper.appendChild(rl);
+  const rl = el('div', rlClass); rl.textContent = rowDef.row; wrapper.appendChild(rl);
   return wrapper;
 }
 

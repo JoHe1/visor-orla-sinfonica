@@ -314,38 +314,40 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
   justify-content: flex-start;
 }
 
-/* ── ALINEACIÓN POR SECCIÓN en Anfiteatro 1° ────
-   Cada sección tiene min-width fijo para mantener
-   su posición aunque esté vacía.
-   Seat=14px + gap=2px → ~16px por butaca
-   Cen.Par:  max 11 seats → 178px
-   Lat.Int:  max 13 seats → 210px
-   Lat.Ext:  max  7 seats → 114px               */
-
 .sec-group-cen-par {
   display: flex; align-items: center; gap: 2px;
   min-width: 178px;
-  justify-content: flex-end;   /* pegado al gap central */
+  justify-content: flex-end;
 }
 .sec-group-cen-imp {
   display: flex; align-items: center; gap: 2px;
   min-width: 178px;
-  justify-content: flex-start; /* pegado al gap central */
+  justify-content: flex-start;
 }
 .sec-group-lat-int {
   display: flex; align-items: center; gap: 2px;
   min-width: 210px;
-  justify-content: center;     /* centrado en su zona */
+  justify-content: center;
 }
 .sec-group-lat-ext-par {
   display: flex; align-items: center; gap: 2px;
   min-width: 114px;
-  justify-content: flex-end;   /* pegado hacia lat-int (derecha) */
+  justify-content: flex-start; /* anclado al exterior izquierdo */
 }
 .sec-group-lat-ext-imp {
   display: flex; align-items: center; gap: 2px;
   min-width: 114px;
-  justify-content: flex-start; /* pegado hacia lat-int (izquierda) */
+  justify-content: flex-end; /* anclado al exterior derecho */
+}
+
+/* Espaciadores entre secciones del Anfiteatro 1° */
+.sec-spacer {
+  flex-shrink: 0;
+  width: 28px;
+}
+.sec-spacer-wide {
+  flex-shrink: 0;
+  width: 48px;
 }
 
 .split-gap {
